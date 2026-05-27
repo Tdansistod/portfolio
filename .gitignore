@@ -1,0 +1,19 @@
+# Drafts and private notes
+DRAFTS.md
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Dependencies (if you add a build step later)
+node_modules/
+
+# Local env
+.env
+.env.local
