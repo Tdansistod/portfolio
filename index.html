@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Lautaro Waltersdorf — Full-stack web developer"
+      content="Portfolio of Lautaro Waltersdorf — full-stack web developer building fast, polished web experiences."
     />
-    <title>Lautaro Waltersdorf — Full-stack Developer</title>
+    <title>Lautaro Waltersdorf — Full Stack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,197 +17,351 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-name">
-        <p class="hero-meta">
-          <span data-clock aria-label="Current time in Argentina">--:--</span>
-          <span class="meta-sep" aria-hidden="true">·</span>
-          <span>Argentina</span>
-          <span class="meta-sep" aria-hidden="true">·</span>
-          <span class="meta-status"
-            ><span class="status-dot" aria-hidden="true"></span> Open to
-            work</span
-          >
-        </p>
+  <body id="top">
+    <!-- ───────── Header ───────── -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Lautaro Waltersdorf — top of page">
+          Lautaro Waltersdorf
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-        <div class="hero-mark">
-          <h1 id="hero-name" class="hero-name">
+    <main>
+      <!-- ───────── Hero ───────── -->
+      <section class="hero" aria-labelledby="hero-name">
+        <div class="container hero-inner">
+          <p class="hero-eyebrow reveal">Full Stack Developer</p>
+          <h1 class="hero-name reveal" id="hero-name" style="--d: 0.05s">
             <span class="name-line">Lautaro</span>
             <span class="name-line name-italic">Waltersdorf</span>
           </h1>
-          <p class="hero-role">
-            full-stack developer
-            <span class="role-rule" aria-hidden="true"></span>
-            building for the web since 2020
+          <p class="hero-lead reveal" style="--d: 0.12s">
+            I build fast, polished web experiences — from interactive 3D in the
+            browser to marketing sites that load in a blink. Six years writing for
+            the web, the last three shipping for clients.
           </p>
+          <div class="hero-actions reveal" style="--d: 0.18s">
+            <a class="btn btn-primary" href="#work">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
         </div>
       </section>
 
-      <section id="projects" class="section container">
-        <h2 class="section-title">Projects</h2>
+      <!-- ───────── Skills / overview ───────── -->
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">What I do</p>
+            <h2 class="section-title" id="skills-title">
+              Full stack, end to end
+            </h2>
+          </div>
 
-        <div class="embla" data-embla>
-          <div class="embla__viewport">
-            <div class="embla__container">
-              <article class="embla__slide project-card">
-                <div class="project-media" aria-hidden="true">
-                  <span class="project-media-label">preview · soon</span>
-                </div>
-                <h3>Project One</h3>
-                <p class="project-description">
-                  A short description of what this project does and what problem
-                  it solves. Mention the impact, not just the features.
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Frontend</h3>
+              <p>
+                Responsive, accessible interfaces with semantic HTML, modern CSS
+                and vanilla JavaScript. I care about motion, type and the small
+                details that make a page feel considered.
+              </p>
+              <ul class="skill-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Three.js</li>
+                <li>Responsive UI</li>
+                <li>Accessibility</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal" style="--d: 0.06s">
+              <h3>Backend</h3>
+              <p>
+                REST APIs, databases and authentication. I scope the data model,
+                wire up the endpoints and keep the moving parts honest under real
+                constraints.
+              </p>
+              <ul class="skill-tags">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>REST APIs</li>
+                <li>PostgreSQL</li>
+                <li>Auth</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal" style="--d: 0.12s">
+              <h3>Craft &amp; tooling</h3>
+              <p>
+                Performance budgets, clean Git history and a command-line-first
+                workflow. I ship product, measure it and iterate — not chase
+                perfect in a vacuum.
+              </p>
+              <ul class="skill-tags">
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Performance</li>
+                <li>Playwright</li>
+                <li>CLI</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Work / projects ───────── -->
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">Selected work</p>
+            <h2 class="section-title" id="work-title">Things I've built</h2>
+          </div>
+        </div>
+
+        <!-- Project 01 — 3D Car Visualizer -->
+        <article class="project" id="project-cars-3d">
+          <div class="container project-inner">
+            <div class="project-media reveal" aria-label="Video preview of the 3D Car Visualizer">
+              <video
+                class="project-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+                preload="metadata"
+                poster="videos/cars-3d-poster.jpg"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+                <source src="videos/cars-3d.mp4" type="video/mp4" />
+              </video>
+              <div class="project-media-placeholder" aria-hidden="true">
+                <span class="placeholder-label">Video preview</span>
+                <span class="placeholder-sub">videos/cars-3d.mp4</span>
+              </div>
+            </div>
+
+            <div class="project-body reveal" style="--d: 0.08s">
+              <p class="project-num">01</p>
+              <h3 class="project-title">3D Car Visualizer</h3>
+              <a
+                class="project-live"
+                href="https://cars-3d.lautarowaltersdorf.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                cars-3d.lautarowaltersdorf.com
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <div class="project-block">
+                <h4>What it is</h4>
+                <p>
+                  An immersive, real-time 3D car configurator that runs entirely
+                  in the browser. The model loads with a cinematic camera intro,
+                  studio HDR lighting and physically-based materials — no plugin,
+                  no app, just a link.
                 </p>
+              </div>
+
+              <div class="project-block">
+                <h4>What you can do</h4>
+                <ul class="project-do">
+                  <li>Drag to orbit the car in full 3D</li>
+                  <li>Change the paint colour on the fly</li>
+                  <li>Hit the gas to rev the engine with synced audio</li>
+                  <li>Go fullscreen for the showroom view</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <h4>Tech stack</h4>
+                <ul class="project-tech">
+                  <li>Three.js</li>
+                  <li>WebGL</li>
+                  <li>GLTF / GLB</li>
+                  <li>Tween.js</li>
+                  <li>HDR / IBL</li>
+                  <li>Web Audio</li>
+                  <li>Vanilla JS</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <h4>Key features</h4>
+                <ul class="project-features">
+                  <li>ACES filmic tone mapping with image-based studio lighting</li>
+                  <li>Cinematic tweened camera intro on load</li>
+                  <li>Mobile-aware rendering — adaptive pixel ratio and quality</li>
+                  <li>Interactive paint, fullscreen mode and engine audio</li>
+                  <li>Loads from a single static URL, no backend required</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 02 — Media Monitor / Corporate PR -->
+        <article class="project project-reverse" id="project-media-monitor">
+          <div class="container project-inner">
+            <div class="project-media reveal" aria-label="Video preview of the Media Monitor site">
+              <video
+                class="project-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+                preload="metadata"
+                poster="videos/media-monitor-poster.jpg"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              >
+                <source src="videos/media-monitor.mp4" type="video/mp4" />
+              </video>
+              <div class="project-media-placeholder" aria-hidden="true">
+                <span class="placeholder-label">Video preview</span>
+                <span class="placeholder-sub">videos/media-monitor.mp4</span>
+              </div>
+            </div>
+
+            <div class="project-body reveal" style="--d: 0.08s">
+              <p class="project-num">02</p>
+              <h3 class="project-title">Media Monitor</h3>
+              <a
+                class="project-live"
+                href="https://media-monitor.lautarowaltersdorf.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                media-monitor.lautarowaltersdorf.com
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <div class="project-block">
+                <h4>What it is</h4>
+                <p>
+                  A complete marketing site for a public-relations agency —
+                  hero, services, method, testimonials, team and a working
+                  contact form. A full landing experience that loads fast and
+                  reads cleanly on any screen.
+                </p>
+              </div>
+
+              <div class="project-block">
+                <h4>What you can do</h4>
+                <ul class="project-do">
+                  <li>Explore services, method and team sections</li>
+                  <li>Watch stats count up as they scroll into view</li>
+                  <li>Open the responsive mobile menu</li>
+                  <li>Send a message through the validated contact form</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <h4>Tech stack</h4>
                 <ul class="project-tech">
                   <li>HTML</li>
                   <li>CSS</li>
-                  <li>JavaScript</li>
+                  <li>Vanilla JS</li>
+                  <li>IntersectionObserver</li>
+                  <li>PWA manifest</li>
+                  <li>SEO / Open Graph</li>
                 </ul>
-                <div class="project-links">
-                  <a href="#" aria-label="GitHub repository">Code →</a>
-                  <a href="#" aria-label="Live demo">Live →</a>
-                </div>
-              </article>
+              </div>
 
-              <article class="embla__slide project-card">
-                <div class="project-media" aria-hidden="true">
-                  <span class="project-media-label">preview · soon</span>
-                </div>
-                <h3>Project Two</h3>
-                <p class="project-description">
-                  A second project. Describe the stack and what you learned
-                  while building it.
-                </p>
-                <ul class="project-tech">
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>PostgreSQL</li>
+              <div class="project-block">
+                <h4>Key features</h4>
+                <ul class="project-features">
+                  <li>Scroll-triggered reveal animations throughout</li>
+                  <li>Animated count-up statistics</li>
+                  <li>Sticky nav with a responsive mobile menu</li>
+                  <li>Client-side validated contact form</li>
+                  <li>Built for performance, SEO and social sharing</li>
                 </ul>
-                <div class="project-links">
-                  <a href="#" aria-label="GitHub repository">Code →</a>
-                  <a href="#" aria-label="Live demo">Live →</a>
-                </div>
-              </article>
-
-              <article class="embla__slide project-card">
-                <div class="project-media" aria-hidden="true">
-                  <span class="project-media-label">preview · soon</span>
-                </div>
-                <h3>Project Three</h3>
-                <p class="project-description">
-                  A third project — ideally one that shows full-stack capability
-                  (frontend + backend + database).
-                </p>
-                <ul class="project-tech">
-                  <li>React</li>
-                  <li>Node.js</li>
-                  <li>MongoDB</li>
-                </ul>
-                <div class="project-links">
-                  <a href="#" aria-label="GitHub repository">Code →</a>
-                  <a href="#" aria-label="Live demo">Live →</a>
-                </div>
-              </article>
+              </div>
             </div>
           </div>
+        </article>
+      </section>
 
-          <div class="embla__controls">
-            <button
-              class="embla__btn"
-              data-embla-prev
-              aria-label="Previous project"
-            >
-              ←
-            </button>
-            <p class="embla__counter">
-              <span data-embla-current>01</span>
-              <span class="embla__counter-sep">/</span>
-              <span data-embla-total>03</span>
+      <!-- ───────── About ───────── -->
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="container about-inner">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">About</p>
+            <h2 class="section-title" id="about-title">A bit about me</h2>
+          </div>
+          <div class="about-body reveal" style="--d: 0.06s">
+            <p>
+              I'm Lautaro — a full-stack developer with six years building for
+              the web. I spent the first half teaching myself through personal
+              projects, and the last three working professionally as a freelancer.
             </p>
-            <button
-              class="embla__btn"
-              data-embla-next
-              aria-label="Next project"
-            >
-              →
-            </button>
+            <p>
+              Earlier this year I founded <em>Web Factory Studio</em>, offering web
+              design and native apps to the Latin American market. The technical
+              work went well; the market wasn't quite ready. After several months
+              I decided to wind it down.
+            </p>
+            <p>
+              What I took from running my own studio — scoping projects, talking
+              to clients, shipping under real constraints — is what I want to bring
+              into a team now. I'm looking for a full-stack role where I can focus
+              on building product, not chasing leads.
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="about" class="section container about">
-        <h2 class="section-title">About me</h2>
-        <ol class="notes-list">
-          <li>
-            <span class="note-num">01</span>
-            <span class="note-body"
-              >Six years building for the web — three on my own, three for
-              clients.</span
-            >
-          </li>
-          <li>
-            <span class="note-num">02</span>
-            <span class="note-body"
-              >Founded <em>Web Factory Studio</em> in 2026, wound it down the
-              same year. The work was good. The market wasn't ready.</span
-            >
-          </li>
-          <li>
-            <span class="note-num">03</span>
-            <span class="note-body"
-              >Looking for a full-stack seat on a team. Less chasing leads, more
-              shipping product.</span
-            >
-          </li>
-        </ol>
-      </section>
-
-      <section id="skills" class="section container">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3>Frontend</h3>
-            <p>
-              Building responsive, accessible interfaces with semantic HTML,
-              modern CSS, and JavaScript.
-            </p>
-          </article>
-          <article class="skill-card">
-            <h3>Backend</h3>
-            <p>
-              Designing REST APIs, working with databases, and handling
-              authentication.
-            </p>
-          </article>
-          <article class="skill-card">
-            <h3>Tooling</h3>
-            <p>
-              Git, GitHub, the command line, and testing with tools like
-              Playwright.
-            </p>
-          </article>
+      <!-- ───────── Contact ───────── -->
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-inner reveal">
+          <p class="section-eyebrow">Contact</p>
+          <h2 class="contact-title" id="contact-title">
+            Let's build something together.
+          </h2>
+          <p class="contact-lead">
+            Looking for a full-stack developer? I'd love to hear what you're
+            working on.
+          </p>
+          <ul class="contact-links">
+            <li>
+              <a href="mailto:lautaronuriel@gmail.com">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">lautaronuriel@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/lautaronuriel" target="_blank" rel="noopener">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/lautaronuriel ↗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/lautaro-waltersdorf" target="_blank" rel="noopener">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">in/lautaro-waltersdorf ↗</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <section id="contact" class="section container section-contact">
-        <h2 class="contact-title">Get in touch</h2>
-        <p class="contact-text">
-          I'm currently looking for new opportunities and my inbox is always
-          open. Whether you have a question or just want to say hi, I'll do my
-          best to get back to you!
-        </p>
-        <a href="mailto:lautaronuriel@gmail.com" class="btn btn-primary"
-          >Say hello</a
-        >
       </section>
     </main>
 
+    <!-- ───────── Footer ───────── -->
     <footer class="site-footer">
-      <p>
-        Built by Lautaro Waltersdorf &middot;
-        <a href="https://github.com/lautaronuriel" rel="noopener">GitHub</a>
-      </p>
+      <div class="container footer-inner">
+        <span class="footer-name">Lautaro Waltersdorf</span>
+        <span class="footer-meta">Full Stack Developer · Built from scratch, no frameworks</span>
+        <span class="footer-year">© 2026</span>
+      </div>
     </footer>
 
     <script type="module" src="script.js"></script>
