@@ -40,7 +40,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
+  scroll-padding-top: 1.5rem;
 }
 
 body {
@@ -110,74 +110,6 @@ em {
   }
   html {
     scroll-behavior: auto;
-  }
-}
-
-/* ───────── Header ───────── */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(14, 12, 10, 0.72);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease, background 0.3s ease;
-}
-
-.site-header.scrolled {
-  border-bottom-color: var(--rule);
-  background: rgba(14, 12, 10, 0.88);
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-  padding-top: var(--space-3);
-  padding-bottom: var(--space-3);
-}
-
-.wordmark {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--accent);
-  font-weight: 400;
-  white-space: nowrap;
-  font-variation-settings:
-    "opsz" 50,
-    "SOFT" 60,
-    "WONK" 1;
-}
-
-.site-nav {
-  display: flex;
-  gap: var(--space-4);
-}
-
-.site-nav a {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
-  text-transform: lowercase;
-  color: var(--text-muted);
-  transition: color 0.2s ease;
-}
-
-.site-nav a:hover {
-  color: var(--accent);
-}
-
-@media (max-width: 560px) {
-  .site-nav {
-    gap: var(--space-3);
-  }
-  .site-nav a {
-    font-size: 0.76rem;
   }
 }
 

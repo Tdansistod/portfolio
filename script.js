@@ -18,13 +18,3 @@ if ('IntersectionObserver' in window && reveals.length) {
   reveals.forEach((el) => el.classList.add('in'));
 }
 
-// ───────── Header: subtle border once scrolled ─────────
-const header = document.querySelector('.site-header');
-
-if (header) {
-  const onScroll = () => {
-    header.classList.toggle('scrolled', window.scrollY > 16);
-  };
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-}
