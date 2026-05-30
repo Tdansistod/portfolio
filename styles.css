@@ -381,7 +381,9 @@ em {
 .project-media-placeholder,
 .project-video {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  /* Match the source videos' native 1280x720 (16:9) so they fill the
+     slot with no letterboxing or black bars. */
+  aspect-ratio: 16 / 9;
   border-radius: var(--radius);
   border: 1px solid var(--border);
 }
