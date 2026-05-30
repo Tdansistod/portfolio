@@ -263,27 +263,33 @@ em {
 @media (min-width: 900px) {
   .hero-inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    gap: var(--space-6);
+    gap: var(--space-7);
   }
 
+  /* Name + lead are the primary element: let them take the lion's share. */
   .hero-main {
     flex: 1 1 auto;
   }
 
+  /* Stats are a slim secondary column pinned to the right, intentionally
+     narrow so they never compete with the name/lead for attention. */
   .hero-stats {
     display: block;
     flex: 0 0 auto;
-    border-left: 2px solid var(--accent);
+    width: max-content;
+    align-self: center;
+    border-left: 1px solid var(--border, rgba(255, 255, 255, 0.12));
     padding-left: var(--space-4);
+    opacity: 0.85;
   }
 
   .hero-stats-list {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--space-4);
+    gap: var(--space-3);
   }
 
   .hero-stat {
@@ -293,21 +299,21 @@ em {
   .hero-stat-num {
     font-family: var(--font-serif);
     font-weight: 400;
-    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-size: 1.5rem;
     line-height: 1;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
     color: var(--accent);
   }
 
   .hero-stat-label {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.68rem;
     line-height: 1.4;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--text-dim);
-    margin: var(--space-1) 0 0;
-    max-width: 16ch;
+    margin: 2px 0 0;
+    max-width: 14ch;
   }
 }
 

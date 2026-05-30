@@ -22,20 +22,38 @@
       <!-- ───────── Hero ───────── -->
       <section class="hero" aria-labelledby="hero-name">
         <div class="container hero-inner">
-          <p class="hero-eyebrow reveal">Full Stack Developer</p>
-          <h1 class="hero-name reveal" id="hero-name" style="--d: 0.05s">
-            <span class="name-line">Lautaro</span>
-            <span class="name-line name-italic">Waltersdorf</span>
-          </h1>
-          <p class="hero-lead reveal" style="--d: 0.12s">
-            I build fast, polished web experiences — from interactive 3D in the
-            browser to marketing sites that load in a blink. Six years writing for
-            the web, the last three shipping for clients.
-          </p>
-          <div class="hero-actions reveal" style="--d: 0.18s">
-            <a class="btn btn-primary" href="#work">See my work</a>
-            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          <div class="hero-main">
+            <p class="hero-eyebrow reveal">Full Stack Developer</p>
+            <h1 class="hero-name reveal" id="hero-name" style="--d: 0.05s">
+              <span class="name-line">Lautaro</span>
+              <span class="name-line name-italic">Waltersdorf</span>
+            </h1>
+            <p class="hero-lead reveal" style="--d: 0.12s">
+              I build fast, polished web experiences — from interactive 3D in the
+              browser to marketing sites that load in a blink. Six years writing for
+              the web, the last three shipping for clients.
+            </p>
+            <div class="hero-actions reveal" style="--d: 0.18s">
+              <a class="btn btn-primary" href="#work">See my work</a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            </div>
           </div>
+          <aside class="hero-stats reveal" style="--d: 0.24s" aria-label="Key stats">
+            <dl class="hero-stats-list">
+              <div class="hero-stat">
+                <dt class="hero-stat-num">6+</dt>
+                <dd class="hero-stat-label">years building for the web</dd>
+              </div>
+              <div class="hero-stat">
+                <dt class="hero-stat-num">3</dt>
+                <dd class="hero-stat-label">years shipping for clients</dd>
+              </div>
+              <div class="hero-stat">
+                <dt class="hero-stat-num">2</dt>
+                <dd class="hero-stat-label">featured projects</dd>
+              </div>
+            </dl>
+          </aside>
         </div>
       </section>
 
@@ -64,11 +82,10 @@
                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
               >
                 <source src="videos/cars-3d.webm" type="video/webm" />
-                <source src="videos/cars-3d.mp4" type="video/mp4" />
               </video>
               <div class="project-media-placeholder" aria-hidden="true">
                 <span class="placeholder-label">Video preview</span>
-                <span class="placeholder-sub">videos/cars-3d.mp4</span>
+                <span class="placeholder-sub">videos/cars-3d.webm</span>
               </div>
             </div>
 
@@ -148,11 +165,10 @@
                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
               >
                 <source src="videos/media-monitor.webm" type="video/webm" />
-                <source src="videos/media-monitor.mp4" type="video/mp4" />
               </video>
               <div class="project-media-placeholder" aria-hidden="true">
                 <span class="placeholder-label">Video preview</span>
-                <span class="placeholder-sub">videos/media-monitor.mp4</span>
+                <span class="placeholder-sub">videos/media-monitor.webm</span>
               </div>
             </div>
 
@@ -254,30 +270,35 @@
               <h3>Backend</h3>
               <p>
                 REST APIs, real-time features and relational data. I scope the
-                data model, wire up the endpoints with Node, Express or PHP and
-                keep the moving parts honest under real constraints.
+                data model, wire up the endpoints with Node, Express, PHP or
+                Python — and reach for Supabase when a project wants managed
+                Postgres and auth out of the box.
               </p>
               <ul class="skill-tags">
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>PHP</li>
+                <li>Python</li>
                 <li>REST APIs</li>
                 <li>WebSockets</li>
-                <li>MySQL</li>
                 <li>PostgreSQL</li>
+                <li>Supabase</li>
+                <li>MySQL</li>
               </ul>
             </article>
 
             <article class="skill-card reveal" style="--d: 0.12s">
-              <h3>Infrastructure</h3>
+              <h3>Infrastructure &amp; tooling</h3>
               <p>
                 I deploy and run what I build — configuring and administering VPS
-                servers on OpenLiteSpeed, with a clean Git history and a
+                servers on OpenLiteSpeed, automating browser checks with
+                Playwright, and keeping a clean Git history and a
                 command-line-first workflow throughout.
               </p>
               <ul class="skill-tags">
                 <li>VPS</li>
                 <li>OpenLiteSpeed</li>
+                <li>Playwright</li>
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>CLI</li>
@@ -401,33 +422,6 @@
                 <li>WebSockets</li>
                 <li>VPS / OpenLiteSpeed</li>
                 <li>Figma</li>
-              </ul>
-            </li>
-
-            <li class="timeline-item reveal" style="--d: 0.16s">
-              <div class="timeline-head">
-                <h3 class="timeline-role">Junior Full Stack Developer — Internship</h3>
-                <span class="timeline-meta">May 2023 – Jun 2023 · 1 month</span>
-              </div>
-              <p class="timeline-org">GoUpCloud · Chile (remote)</p>
-              <p class="timeline-summary">
-                Worked in a team of four to build a web application from scratch
-                for a Chilean car-wash company, managing its production, staff,
-                services and billing.
-              </p>
-              <ul class="timeline-points">
-                <li>Full CRUD system for vehicle intake and client records.</li>
-                <li>Client billing and worker-payment management.</li>
-                <li>Worker and service management modules.</li>
-                <li>
-                  Single-page React frontend over a PHP REST API backed by MySQL.
-                </li>
-              </ul>
-              <ul class="timeline-tech">
-                <li>React (SPA)</li>
-                <li>PHP</li>
-                <li>REST API</li>
-                <li>MySQL</li>
               </ul>
             </li>
           </ol>
