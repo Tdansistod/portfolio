@@ -409,11 +409,24 @@ em {
 .project-media-placeholder,
 .project-video {
   width: 100%;
-  /* Match the source videos' native 1280x720 (16:9) so they fill the
-     slot with no letterboxing or black bars. */
+  /* Default to 16:9; each video overrides this below to match its own
+     cropped content ratio so it fills the slot with no black bars. */
   aspect-ratio: 16 / 9;
   border-radius: var(--radius);
   border: 1px solid var(--border);
+}
+
+/* The source recordings had black borders baked into the 1280x720 frame.
+   The WebMs are cropped to their real content, so each has its own ratio:
+   cars-3d is 1016x560 and media-monitor is 1110x624. Match each exactly. */
+#project-cars-3d .project-video,
+#project-cars-3d .project-media-placeholder {
+  aspect-ratio: 1016 / 560;
+}
+
+#project-media-monitor .project-video,
+#project-media-monitor .project-media-placeholder {
+  aspect-ratio: 1110 / 624;
 }
 
 .project-media-placeholder {
