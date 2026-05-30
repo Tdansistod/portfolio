@@ -248,7 +248,67 @@ em {
 .hero-inner {
   position: relative;
   z-index: 1;
+}
+
+.hero-main {
   max-width: 56ch;
+}
+
+/* Stats are a desktop-only flourish; hidden on smaller screens where the
+   hero copy already carries the same numbers. */
+.hero-stats {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+  }
+
+  .hero-main {
+    flex: 1 1 auto;
+  }
+
+  .hero-stats {
+    display: block;
+    flex: 0 0 auto;
+    border-left: 2px solid var(--accent);
+    padding-left: var(--space-4);
+  }
+
+  .hero-stats-list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .hero-stat {
+    margin: 0;
+  }
+
+  .hero-stat-num {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--accent);
+  }
+
+  .hero-stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-dim);
+    margin: var(--space-1) 0 0;
+    max-width: 16ch;
+  }
 }
 
 .hero-eyebrow {
