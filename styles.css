@@ -204,12 +204,14 @@ em {
   position: absolute;
   top: -20%;
   left: -10%;
-  width: 60%;
-  height: 80%;
+  /* Glow scales with the viewport so it fills the box on every screen size
+     instead of being clipped into a thin sliver on narrow / tall mobiles. */
+  width: max(60%, 22rem);
+  height: max(80%, 22rem);
   background: radial-gradient(
-    circle at center,
+    ellipse at center,
     rgba(226, 93, 41, 0.14),
-    transparent 65%
+    transparent 70%
   );
   pointer-events: none;
   z-index: 0;
