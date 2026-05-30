@@ -352,10 +352,17 @@ em {
   .project-inner {
     grid-template-columns: 1.05fr 1fr;
     gap: var(--space-7);
-    align-items: center;
+    align-items: start;
   }
   .project-reverse .project-media {
     order: 2;
+  }
+  /* anchor the video to the top of its slot on desktop */
+  .project-media {
+    align-self: start;
+  }
+  .project-video {
+    object-position: top;
   }
 }
 
