@@ -593,9 +593,191 @@ em {
   padding: 0.25rem 0.7rem;
 }
 
+/* ───────── Experience / timeline ───────── */
+.timeline {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.timeline-item {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.timeline-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+.timeline-role {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: var(--accent-soft);
+  font-variation-settings:
+    "opsz" 40,
+    "SOFT" 40,
+    "WONK" 0;
+}
+
+.timeline-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.timeline-org {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.timeline-summary {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 64ch;
+  margin-bottom: var(--space-3);
+}
+
+.timeline-points {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.timeline-points li {
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: 64ch;
+}
+
+.timeline-points li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+}
+
+.timeline-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.timeline-tech li {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-soft);
+  border: 1px solid var(--border);
+  background: rgba(226, 93, 41, 0.06);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+}
+
+/* ───────── Education ───────── */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+
+.education-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.education-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.education-card h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: var(--heading);
+  margin-bottom: var(--space-3);
+  font-variation-settings:
+    "opsz" 40,
+    "SOFT" 40,
+    "WONK" 0;
+}
+
+.education-org {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent-soft);
+  margin-bottom: var(--space-1);
+}
+
+.education-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}
+
+.education-meta a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.education-meta a:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent-soft);
+}
+
 /* ───────── About ───────── */
 .about-inner {
   max-width: 760px;
+}
+
+.about-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+
+.about-traits li {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
 }
 
 .about-body p {

@@ -26,6 +26,8 @@
         </a>
         <nav class="site-nav" aria-label="Primary">
           <a href="#work">Work</a>
+          <a href="#stack">Stack</a>
+          <a href="#experience">Experience</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -228,13 +230,13 @@
         </article>
       </section>
 
-      <!-- ───────── Skills / overview ───────── -->
-      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <!-- ───────── Tech stack ───────── -->
+      <section class="section skills-section" id="stack" aria-labelledby="stack-title">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow">What I do</p>
-            <h2 class="section-title" id="skills-title">
-              Full stack, end to end
+            <p class="section-eyebrow">Tech stack</p>
+            <h2 class="section-title" id="stack-title">
+              The tools I build with
             </h2>
           </div>
 
@@ -243,49 +245,206 @@
               <h3>Frontend</h3>
               <p>
                 Responsive, accessible interfaces with semantic HTML, modern CSS
-                and vanilla JavaScript. I care about motion, type and the small
-                details that make a page feel considered.
+                and JavaScript — plus React, Redux and Next.js for richer single-page
+                apps. I care about motion, type and the small details that make a
+                page feel considered.
               </p>
               <ul class="skill-tags">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Next.js</li>
                 <li>Three.js</li>
-                <li>Responsive UI</li>
-                <li>Accessibility</li>
               </ul>
             </article>
 
             <article class="skill-card reveal" style="--d: 0.06s">
               <h3>Backend</h3>
               <p>
-                REST APIs, databases and authentication. I scope the data model,
-                wire up the endpoints and keep the moving parts honest under real
-                constraints.
+                REST APIs, real-time features and relational data. I scope the
+                data model, wire up the endpoints with Node, Express or PHP and
+                keep the moving parts honest under real constraints.
               </p>
               <ul class="skill-tags">
                 <li>Node.js</li>
                 <li>Express</li>
+                <li>PHP</li>
                 <li>REST APIs</li>
+                <li>WebSockets</li>
+                <li>MySQL</li>
                 <li>PostgreSQL</li>
-                <li>Auth</li>
               </ul>
             </article>
 
             <article class="skill-card reveal" style="--d: 0.12s">
-              <h3>Craft &amp; tooling</h3>
+              <h3>Infrastructure</h3>
               <p>
-                Performance budgets, clean Git history and a command-line-first
-                workflow. I ship product, measure it and iterate — not chase
-                perfect in a vacuum.
+                I deploy and run what I build — configuring and administering VPS
+                servers on OpenLiteSpeed, with a clean Git history and a
+                command-line-first workflow throughout.
               </p>
               <ul class="skill-tags">
+                <li>VPS</li>
+                <li>OpenLiteSpeed</li>
                 <li>Git</li>
                 <li>GitHub</li>
-                <li>Performance</li>
-                <li>Playwright</li>
                 <li>CLI</li>
               </ul>
+            </article>
+
+            <article class="skill-card reveal" style="--d: 0.18s">
+              <h3>Design tools</h3>
+              <p>
+                Design isn't a separate phase for me. I move from Figma to code
+                directly, and reach for Photoshop and After Effects when a project
+                needs custom imagery or motion.
+              </p>
+              <ul class="skill-tags">
+                <li>Figma</li>
+                <li>Photoshop</li>
+                <li>After Effects</li>
+                <li>UI / UX</li>
+                <li>Responsive design</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Experience ───────── -->
+      <section
+        class="section experience-section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">Experience</p>
+            <h2 class="section-title" id="experience-title">
+              Where I've shipped
+            </h2>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline-item reveal">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Full Stack Developer — Freelance</h3>
+                <span class="timeline-meta">Feb 2024 – Nov 2024 · 10 months</span>
+              </div>
+              <p class="timeline-org">W Diseño Web · Own business · Argentina (remote)</p>
+              <p class="timeline-summary">
+                Built complete, custom web solutions for a range of businesses —
+                owning both the user-facing interfaces and robust backend systems
+                end to end.
+              </p>
+              <ul class="timeline-points">
+                <li>
+                  Delivered bespoke sites and web apps from scratch, tailored to
+                  each client's needs.
+                </li>
+                <li>
+                  Designed intuitive, attractive UI/UX with a focus on advanced
+                  CSS and responsive layouts.
+                </li>
+                <li>
+                  Streamlined clients' internal management, production and sales
+                  using Node.js, Express and WebSockets.
+                </li>
+                <li>
+                  Configured and administered VPS servers on OpenLiteSpeed for
+                  secure, performant deployments.
+                </li>
+              </ul>
+              <ul class="timeline-tech">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>WebSockets</li>
+                <li>VPS / OpenLiteSpeed</li>
+                <li>Figma</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item reveal" style="--d: 0.08s">
+              <div class="timeline-head">
+                <h3 class="timeline-role">Junior Full Stack Developer — Internship</h3>
+                <span class="timeline-meta">May 2023 – Jun 2023 · 1 month</span>
+              </div>
+              <p class="timeline-org">GoUpCloud · Chile (remote)</p>
+              <p class="timeline-summary">
+                Worked in a team of four to build a web application from scratch
+                for a Chilean car-wash company, managing its production, staff,
+                services and billing.
+              </p>
+              <ul class="timeline-points">
+                <li>Full CRUD system for vehicle intake and client records.</li>
+                <li>Client billing and worker-payment management.</li>
+                <li>Worker and service management modules.</li>
+                <li>
+                  Single-page React frontend over a PHP REST API backed by MySQL.
+                </li>
+              </ul>
+              <ul class="timeline-tech">
+                <li>React (SPA)</li>
+                <li>PHP</li>
+                <li>REST API</li>
+                <li>MySQL</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ───────── Education ───────── -->
+      <section
+        class="section education-section"
+        id="education"
+        aria-labelledby="education-title"
+      >
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="section-eyebrow">Education</p>
+            <h2 class="section-title" id="education-title">
+              How I got here
+            </h2>
+          </div>
+
+          <div class="education-grid">
+            <article class="education-card reveal">
+              <h3>Full Stack Web Developer</h3>
+              <p class="education-org">Henry — Intensive Bootcamp</p>
+              <p class="education-meta">6-month intensive program</p>
+            </article>
+
+            <article class="education-card reveal" style="--d: 0.06s">
+              <h3>Aeronautical Engineering</h3>
+              <p class="education-org">Universidad Tecnológica Nacional</p>
+              <p class="education-meta">5 years · incomplete</p>
+            </article>
+
+            <article class="education-card reveal" style="--d: 0.12s">
+              <h3>Technical Degree — Electrical &amp; Electronic Engineering</h3>
+              <p class="education-org">Escuela Técnica Nº 28 "República Francesa"</p>
+              <p class="education-meta">6-year technical secondary program</p>
+            </article>
+
+            <article class="education-card reveal" style="--d: 0.18s">
+              <h3>English — C1 Advanced</h3>
+              <p class="education-org">EF SET English Certificate</p>
+              <p class="education-meta">
+                <a
+                  href="https://efset.org/cert/7NgAiW"
+                  target="_blank"
+                  rel="noopener"
+                  >Verified certificate ↗</a
+                >
+              </p>
             </article>
           </div>
         </div>
@@ -300,9 +459,19 @@
           </div>
           <div class="about-body reveal" style="--d: 0.06s">
             <p>
-              I'm Lautaro — a full-stack developer with six years building for
-              the web. I spent the first half teaching myself through personal
-              projects, and the last three working professionally as a freelancer.
+              I'm Lautaro — a multidisciplinary, creative full-stack developer
+              based in <em>El Bolsón, Río Negro, Argentina</em>. I specialise in
+              building modern, attractive websites that are intuitive and easy to
+              use, and I'm just as comfortable designing the interface as wiring
+              up the backend behind it.
+            </p>
+            <p>
+              My path here is a bit unusual: a six-year technical secondary degree
+              in electrical and electronic engineering, a stretch of aeronautical
+              engineering at the UTN, and then an intensive full-stack bootcamp at
+              <em>Henry</em> that pointed all of it at the web. Add an internship in
+              Chile and ten months freelancing for clients across Argentina, and
+              that's six years building for the web.
             </p>
             <p>
               Earlier this year I founded <em>Web Factory Studio</em>, offering web
@@ -317,6 +486,14 @@
               on building product, not chasing leads.
             </p>
           </div>
+
+          <ul class="about-traits reveal" style="--d: 0.12s" aria-label="Personality">
+            <li>Demanding</li>
+            <li>Driven</li>
+            <li>Responsible</li>
+            <li>Straightforward</li>
+            <li>Results-oriented</li>
+          </ul>
         </div>
       </section>
 
