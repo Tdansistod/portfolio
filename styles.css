@@ -557,6 +557,15 @@ em {
     "WONK" 0;
 }
 
+.project-tagline {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.5em;
+  letter-spacing: 0.01em;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
 .project-live {
   display: inline-flex;
   align-items: center;

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Lautaro Waltersdorf — full-stack web developer building fast, polished web experiences."
+      content="Portfolio of Lautaro Waltersdorf — full-stack AI systems engineer building AI-native products end to end, from data pipelines to polished, design-led interfaces."
     />
-    <title>Lautaro Waltersdorf — Full Stack Developer</title>
+    <title>Lautaro Waltersdorf — Full Stack AI Systems Engineer</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,16 +23,18 @@
       <section class="hero" aria-labelledby="hero-name">
         <div class="container hero-inner">
           <div class="hero-main">
-            <p class="hero-eyebrow reveal">Full Stack Developer</p>
+            <p class="hero-eyebrow reveal">Full Stack AI Systems Engineer</p>
             <h1 class="hero-name reveal" id="hero-name" style="--d: 0.05s">
               <span class="name-line">Lautaro</span>
               <span class="name-line name-italic">Waltersdorf</span>
             </h1>
             <p class="hero-lead reveal" style="--d: 0.12s">
-              I build fast, polished web experiences — from interactive 3D in the
-              browser to marketing sites that load in a blink. Four years building for
-              the web — three self-taught and bootcamp, plus one professional — shipping
-              quality-focused work for clients.
+              Full-stack AI systems architect with four years building for the web.
+              I architect parallel pipelines that ship advanced work in days, not
+              months. Daily stack: orchestrated Python workers (Scrapy), live Node UI,
+              and AI integration wired in through APIs. I work AI-native with Claude
+              Code, the Claude CLI and minimax, and own problems end to end — scope to
+              deploy.
             </p>
             <div class="hero-actions reveal" style="--d: 0.18s">
               <a class="btn btn-primary" href="#work">See my work</a>
@@ -92,7 +94,7 @@
 
             <div class="project-body reveal" style="--d: 0.08s">
               <p class="project-num">01</p>
-              <h3 class="project-title">3D Car Visualizer</h3>
+              <h3 class="project-title">3D Car Visualizer <span class="project-tagline">— orchestrated end to end</span></h3>
               <a
                 class="project-live"
                 href="https://cars-3d.lautarowaltersdorf.com/"
@@ -107,9 +109,11 @@
                 <h4>What it is</h4>
                 <p>
                   An immersive, real-time 3D car configurator that runs entirely
-                  in the browser. The model loads with a cinematic camera intro,
-                  studio HDR lighting and physically-based materials — no plugin,
-                  no app, just a link.
+                  in the browser. I <strong>orchestrated the full 3D
+                  visualization end to end</strong> — scene, frontend and audio
+                  generated around Sketchfab models — then shipped it with a
+                  cinematic camera intro, studio HDR lighting and physically-based
+                  materials. No plugin, no app, just a link.
                 </p>
               </div>
 
@@ -198,7 +202,7 @@
 
             <div class="project-body reveal" style="--d: 0.08s">
               <p class="project-num">02</p>
-              <h3 class="project-title">Media Monitor</h3>
+              <h3 class="project-title">Media Monitor <span class="project-tagline">— AI data pipeline</span></h3>
               <a
                 class="project-live"
                 href="https://media-monitor.lautarowaltersdorf.com/"
@@ -212,13 +216,15 @@
               <div class="project-block">
                 <h4>What it is</h4>
                 <p>
-                  A media monitoring dashboard built from a real PR-agency
-                  brief — track press coverage per client with KPIs, a mentions
-                  feed, sentiment analysis, share of voice and a geographic
-                  map. Switch between clients, browse by month and export
-                  branded reports. The live demo runs on a seeded snapshot so
-                  it loads instantly; in production these views are fed by the
-                  Python ingestion pipeline described below.
+                  A <strong>parallel AI data pipeline</strong> built from a real
+                  PR-agency brief: orchestrated Python workers collect press coverage
+                  in parallel underneath, an AI enrichment layer dedups it and runs
+                  sentiment analysis and AVE, and a live monitoring UI surfaces KPIs,
+                  a mentions feed, share of voice and a geographic map on top. Switch
+                  between clients, browse by month and export branded reports. The
+                  live demo runs on a seeded snapshot so it loads instantly; in
+                  production these views are fed by the orchestrated ingestion and
+                  enrichment pipeline described below.
                 </p>
               </div>
 
@@ -284,6 +290,31 @@
             </div>
           </div>
         </article>
+
+        <!-- Highlight — Scraper Infrastructure -->
+        <div class="container">
+          <div class="skills-grid">
+            <article class="skill-card reveal" id="project-scraper-infra">
+              <h3>Scraper Infrastructure</h3>
+              <p>
+                The multi-layer data pipeline that powers the work above — a UI
+                monitoring panel on top, background Python workers (Scrapy on cron,
+                with auto start/shutdown) doing parallel collection underneath, and an
+                AI intelligence layer exposed through API endpoints. It's the
+                orchestration pattern I reach for: collect in parallel, enrich with AI,
+                run it in production.
+              </p>
+              <ul class="skill-tags">
+                <li>Playwright</li>
+                <li>Python / Scrapy</li>
+                <li>Node.js</li>
+                <li>cron</li>
+                <li>Ubuntu server automation</li>
+                <li>REST API</li>
+              </ul>
+            </article>
+          </div>
+        </div>
       </section>
 
       <!-- ───────── Tech stack ───────── -->
@@ -298,6 +329,24 @@
 
           <div class="skills-grid">
             <article class="skill-card reveal">
+              <h3>AI systems</h3>
+              <p>
+                I build with AI in the loop every day and design the orchestration,
+                not just the API call — agentic workflows, multi-step pipelines and
+                LLM-driven tooling. Claude Code and the Claude CLI run my dev loop;
+                minimax for fast iteration. It's how I ship a lot, fast.
+              </p>
+              <ul class="skill-tags">
+                <li>Claude Code</li>
+                <li>Claude CLI</li>
+                <li>minimax</li>
+                <li>LLM orchestration</li>
+                <li>Agentic workflows</li>
+                <li>AI-native dev</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal" style="--d: 0.06s">
               <h3>Frontend</h3>
               <p>
                 Responsive, accessible interfaces with semantic HTML, modern CSS
@@ -316,7 +365,7 @@
               </ul>
             </article>
 
-            <article class="skill-card reveal" style="--d: 0.06s">
+            <article class="skill-card reveal" style="--d: 0.12s">
               <h3>Backend</h3>
               <p>
                 REST APIs, real-time features and relational data. I scope the
@@ -337,7 +386,7 @@
               </ul>
             </article>
 
-            <article class="skill-card reveal" style="--d: 0.12s">
+            <article class="skill-card reveal" style="--d: 0.18s">
               <h3>Infrastructure &amp; tooling</h3>
               <p>
                 I deploy and run what I build — configuring and administering VPS
@@ -355,7 +404,7 @@
               </ul>
             </article>
 
-            <article class="skill-card reveal" style="--d: 0.18s">
+            <article class="skill-card reveal" style="--d: 0.24s">
               <h3>Design tools</h3>
               <p>
                 Design isn't a separate phase for me. I move from Figma to code
@@ -539,8 +588,16 @@
               I came to the web from an engineering background — electronics, then
               aeronautics — and that's the lens I still bring to it: I like
               understanding the whole system, not just the layer I'm working on.
-              It's why I'm as happy reasoning about a backend or a deployment as I
-              am sweating the type and motion on the front end.
+              It's why I'm as happy reasoning about a backend, an AI pipeline or a
+              deployment as I am sweating the type and motion on the front end.
+            </p>
+            <p>
+              These days that systems instinct goes into AI. I architect parallel
+              pipelines that ship advanced work in days, not months — orchestrated
+              Python workers (Scrapy), a live Node UI, and AI integration wired in
+              through APIs. I work AI-native with Claude Code, the Claude CLI and
+              minimax, thinking about the orchestration around a model, not just the
+              API call. It lets me ship more, faster, without giving up the polish.
             </p>
             <p>
               Running my own studio for a stretch taught me the rest. Pitching,
@@ -564,8 +621,8 @@
             Let's build something together.
           </h2>
           <p class="contact-lead">
-            Looking for a full-stack developer? I'd love to hear what you're
-            working on.
+            Looking for someone who can build AI systems end to end and make them
+            feel good to use? I'd love to hear what you're working on.
           </p>
           <ul class="contact-links">
             <li>
@@ -595,7 +652,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <span class="footer-name">Lautaro Waltersdorf</span>
-        <span class="footer-meta">Full Stack Developer · Shipping polished products with modern web tech</span>
+        <span class="footer-meta">Full Stack AI Systems Engineer · Building AI-native products end to end</span>
         <span class="footer-year">© 2026</span>
       </div>
     </footer>
