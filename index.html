@@ -46,8 +46,8 @@
                 <dd class="hero-stat-label">years building for the web</dd>
               </div>
               <div class="hero-stat">
-                <dt class="hero-stat-num">100%</dt>
-                <dd class="hero-stat-label">shipping quality-focused</dd>
+                <dt class="hero-stat-num">C1</dt>
+                <dd class="hero-stat-label">English (EF SET certified)</dd>
               </div>
               <div class="hero-stat">
                 <dt class="hero-stat-num">2</dt>
@@ -146,6 +146,29 @@
                   <li>Loads from a single static URL, no backend required</li>
                 </ul>
               </div>
+
+              <div class="project-block">
+                <h4>Hard problem solved</h4>
+                <p>
+                  The engine wind-down is the part that usually sounds fake.
+                  Instead of synthesising a pitch-down, it plays a window cut
+                  from the tail of the real rev recording — anchored to the
+                  decay and cross-faded into a looping idle — so deceleration
+                  sounds like physics, not a toy. Audio also self-initialises
+                  muted on load so consent survives a fast load, and a single
+                  device check scales back blur, lighting and reflection size
+                  to keep phones smooth without a forked build.
+                </p>
+                <a
+                  class="project-code"
+                  href="https://github.com/Tdansistod/cars-3d#readme"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Read the full engineering write-up on GitHub
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
             </div>
           </div>
         </article>
@@ -189,11 +212,13 @@
               <div class="project-block">
                 <h4>What it is</h4>
                 <p>
-                  A real-time media monitoring dashboard for a PR team —
-                  track press coverage per client with live KPIs, a mentions
+                  A media monitoring dashboard built from a real PR-agency
+                  brief — track press coverage per client with KPIs, a mentions
                   feed, sentiment analysis, share of voice and a geographic
                   map. Switch between clients, browse by month and export
-                  branded reports.
+                  branded reports. The live demo runs on a seeded snapshot so
+                  it loads instantly; in production these views are fed by the
+                  Python ingestion pipeline described below.
                 </p>
               </div>
 
@@ -211,8 +236,9 @@
               <div class="project-block">
                 <h4>Tech stack</h4>
                 <ul class="project-tech">
-                  <li>HTML</li>
-                  <li>CSS</li>
+                  <li>Python</li>
+                  <li>Scrapy</li>
+                  <li>Playwright</li>
                   <li>Vanilla JS</li>
                   <li>ApexCharts</li>
                   <li>Leaflet</li>
@@ -231,6 +257,29 @@
                   <li>Multi-client switcher, alerts view and PDF report export</li>
                   <li>Light/dark theme, responsive layout and PWA install</li>
                 </ul>
+              </div>
+
+              <div class="project-block">
+                <h4>Hard problem solved</h4>
+                <p>
+                  The real work is the ingestion engine behind the dashboard:
+                  a Scrapy crawler with AutoThrottle, retry/back-off and a
+                  per-domain circuit breaker, escalating to Playwright only for
+                  JS-rendered, consent- and paywall-gated outlets. The trick was
+                  making Playwright session-aware — a persistent browser context
+                  per domain solves the consent/paywall handshake once and
+                  reuses it — then feeding that hydrated HTML back into the same
+                  pipeline (dedup, sentiment, AVE) as the cheap HTTP path.
+                </p>
+                <a
+                  class="project-code"
+                  href="https://github.com/Tdansistod/media-monitor#readme"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Read the full backend write-up on GitHub
+                  <span aria-hidden="true">↗</span>
+                </a>
               </div>
             </div>
           </div>
@@ -343,7 +392,7 @@
             <li class="timeline-item reveal">
               <div class="timeline-head">
                 <h3 class="timeline-role">Founder &amp; Full Stack Developer</h3>
-                <span class="timeline-meta">2025 · 2 months</span>
+                <span class="timeline-meta">Apr 2026 – May 2026 · 2 months</span>
               </div>
               <p class="timeline-org">Web Factory Studio · Entrepreneurial exploration · LATAM market (remote)</p>
               <p class="timeline-summary">
@@ -526,9 +575,9 @@
               </a>
             </li>
             <li>
-              <a href="https://github.com/lautaronuriel" target="_blank" rel="noopener">
+              <a href="https://github.com/Tdansistod" target="_blank" rel="noopener">
                 <span class="contact-link-label">GitHub</span>
-                <span class="contact-link-value">github.com/lautaronuriel ↗</span>
+                <span class="contact-link-value">github.com/Tdansistod ↗</span>
               </a>
             </li>
             <li>

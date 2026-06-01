@@ -643,6 +643,25 @@ em {
   padding: 0.25rem 0.7rem;
 }
 
+.project-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  margin-top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-code:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent-soft);
+}
+
 /* ───────── Experience / timeline ───────── */
 .timeline {
   display: grid;
