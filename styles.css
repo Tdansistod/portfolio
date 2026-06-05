@@ -835,6 +835,104 @@ em {
   border-bottom-color: var(--accent-soft);
 }
 
+/* ───────── Personal tools ───────── */
+.section-lead {
+  font-family: var(--font-mono);
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 56ch;
+  margin-top: var(--space-4);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.tool-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.tool-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.tool-num {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--accent-soft);
+  font-variant-numeric: tabular-nums;
+  margin-bottom: var(--space-2);
+}
+
+.tool-title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--heading);
+  margin-bottom: var(--space-2);
+  font-variation-settings:
+    "opsz" 40,
+    "SOFT" 40,
+    "WONK" 0;
+}
+
+.tool-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  margin-bottom: var(--space-3);
+}
+
+.tool-body {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: var(--space-4);
+}
+
+.tool-features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  flex-grow: 1;
+}
+
+.tool-features li {
+  position: relative;
+  padding-left: 1.4rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.tool-features li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+}
+
+.tool-card .project-code {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
 /* ───────── About ───────── */
 .about-inner {
   max-width: 760px;
