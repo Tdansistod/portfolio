@@ -360,29 +360,17 @@ h3 { font-size: 1.5rem; }
 #como .section-head h2 { color: var(--white); }
 #como .eyebrow-dark { color: var(--yellow); opacity: 1; }
 
-/* Trama de puntos: dos capas (grande y fina) que se desvanecen desde las esquinas */
-#como::before,
-#como::after {
+/* Trama de puntos: una sola capa, se desvanece desde las esquinas */
+#como::before {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-#como::before {
-  background-image: radial-gradient(circle, var(--yellow) 2.4px, transparent 2.9px);
-  background-size: 17px 17px;
-  opacity: 0.55;
-  -webkit-mask-image: radial-gradient(ellipse 38% 75% at 100% 0%, #000, transparent), radial-gradient(ellipse 26% 55% at 0% 100%, #000, transparent);
-  mask-image: radial-gradient(ellipse 38% 75% at 100% 0%, #000, transparent), radial-gradient(ellipse 26% 55% at 0% 100%, #000, transparent);
-}
-#como::after {
-  background-image: radial-gradient(circle, var(--yellow) 1.1px, transparent 1.6px);
-  background-size: 11px 11px;
-  opacity: 0.4;
-  -webkit-mask-image: radial-gradient(ellipse 65% 120% at 100% 0%, #000, transparent), radial-gradient(ellipse 45% 90% at 0% 100%, #000, transparent);
-  mask-image: radial-gradient(ellipse 65% 120% at 100% 0%, #000, transparent), radial-gradient(ellipse 45% 90% at 0% 100%, #000, transparent);
+  background-image: radial-gradient(circle, var(--yellow) 1.8px, transparent 2.4px);
+  background-size: 14px 14px;
+  opacity: 0.5;
+  -webkit-mask-image: radial-gradient(ellipse 50% 90% at 100% 0%, #000, transparent), radial-gradient(ellipse 35% 70% at 0% 100%, #000, transparent);
+  mask-image: radial-gradient(ellipse 50% 90% at 100% 0%, #000, transparent), radial-gradient(ellipse 35% 70% at 0% 100%, #000, transparent);
 }
 
 #como .step {
@@ -411,10 +399,3 @@ h3 { font-size: 1.5rem; }
   color: rgba(255, 210, 26, 0.12);
   pointer-events: none;
 }
-
-/* Último paso: resultado en amarillo sólido */
-#como .step:last-child { background: var(--yellow); border-color: var(--yellow); }
-#como .step:last-child h3 { color: #000; }
-#como .step:last-child p { color: rgba(0, 0, 0, 0.78); }
-#como .step:last-child .step-num { background: #000; color: var(--yellow); }
-#como .step:last-child::after { color: rgba(0, 0, 0, 0.1); }
