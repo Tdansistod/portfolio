@@ -400,3 +400,10 @@ h3 { font-size: 1.5rem; }
   color: rgba(255, 210, 26, 0.12);
   pointer-events: none;
 }
+
+/* ───────── Muestras de diseño ───────── */
+.muestras-note { margin-top: 0.8rem; color: var(--muted); }
+.muestras { display: grid; gap: 1.75rem; margin-bottom: 2rem; }
+.muestra h3 { font-size: 1.15rem; color: var(--navy); margin-top: 1rem; }
+.muestra p { color: var(--muted); font-size: 0.9rem; }
+@media (min-width: 760px) { .muestras { grid-template-columns: repeat(3, 1fr); } }
