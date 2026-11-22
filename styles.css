@@ -348,8 +348,73 @@ h3 { font-size: 1.5rem; }
   .hero-card { justify-self: end; }
   .cards { grid-template-columns: 1fr 1fr; }
   .extras { grid-template-columns: 1fr 1fr; }
-  .steps { grid-template-columns: repeat(4, 1fr); }
+  .steps { grid-template-columns: repeat(3, 1fr); }
   .project { grid-template-columns: 1.15fr 1fr; gap: 3rem; }
   .project-flip .project-media { order: 2; }
   .contact-box { padding: 4rem 2rem; }
 }
+
+/* ───────── Cómo trabajamos: sección oscura con halftone ───────── */
+#como { position: relative; overflow: hidden; background: var(--navy); color: var(--white); }
+#como > .container { position: relative; z-index: 1; }
+#como .section-head h2 { color: var(--white); }
+#como .eyebrow-dark { color: var(--yellow); opacity: 1; }
+
+/* Trama de puntos: dos capas (grande y fina) que se desvanecen desde las esquinas */
+#como::before,
+#como::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+#como::before {
+  background-image: radial-gradient(circle, var(--yellow) 2.4px, transparent 2.9px);
+  background-size: 17px 17px;
+  opacity: 0.55;
+  -webkit-mask-image: radial-gradient(ellipse 38% 75% at 100% 0%, #000, transparent), radial-gradient(ellipse 26% 55% at 0% 100%, #000, transparent);
+  mask-image: radial-gradient(ellipse 38% 75% at 100% 0%, #000, transparent), radial-gradient(ellipse 26% 55% at 0% 100%, #000, transparent);
+}
+#como::after {
+  background-image: radial-gradient(circle, var(--yellow) 1.1px, transparent 1.6px);
+  background-size: 11px 11px;
+  opacity: 0.4;
+  -webkit-mask-image: radial-gradient(ellipse 65% 120% at 100% 0%, #000, transparent), radial-gradient(ellipse 45% 90% at 0% 100%, #000, transparent);
+  mask-image: radial-gradient(ellipse 65% 120% at 100% 0%, #000, transparent), radial-gradient(ellipse 45% 90% at 0% 100%, #000, transparent);
+}
+
+#como .step {
+  position: relative;
+  overflow: hidden;
+  background: #141414;
+  border: 1px solid rgba(255, 210, 26, 0.4);
+  color: var(--white);
+}
+#como .step > * { position: relative; z-index: 1; }
+#como .step h3 { color: var(--white); }
+#como .step p { color: rgba(255, 255, 255, 0.78); }
+#como .step-num { background: var(--yellow); color: #000; }
+
+/* Número gigante de fondo */
+#como .step::after {
+  content: attr(data-n);
+  position: absolute;
+  right: 0.9rem;
+  top: -1.1rem;
+  z-index: 0;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 7.5rem;
+  line-height: 1;
+  color: rgba(255, 210, 26, 0.12);
+  pointer-events: none;
+}
+
+/* Último paso: resultado en amarillo sólido */
+#como .step:last-child { background: var(--yellow); border-color: var(--yellow); }
+#como .step:last-child h3 { color: #000; }
+#como .step:last-child p { color: rgba(0, 0, 0, 0.78); }
+#como .step:last-child .step-num { background: #000; color: var(--yellow); }
+#como .step:last-child::after { color: rgba(0, 0, 0, 0.1); }
