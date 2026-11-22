@@ -1,78 +1,196 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lautaro Waltersdorf — Páginas web para tu negocio</title>
     <meta
       name="description"
-      content="Portfolio of Lautaro Waltersdorf — full-stack AI systems engineer building AI-native products end to end, from data pipelines to polished, design-led interfaces."
+      content="Diseño web simple y prolijo para negocios. Tu página publicada en 24hs, sin abono mensual. Sitios desde $20.000."
     />
-    <title>Lautaro Waltersdorf — Full Stack AI Systems Engineer</title>
+    <meta property="og:title" content="Lautaro Waltersdorf — Páginas web para tu negocio" />
+    <meta property="og:description" content="Tu página web publicada en 24hs, sin abono mensual. Desde $20.000." />
+    <meta property="og:type" content="website" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,200..900,0..100,0..1;1,9..144,200..900,0..100,0..1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body id="top">
-    <main>
-      <!-- ───────── Hero ───────── -->
-      <section class="hero" aria-labelledby="hero-name">
-        <div class="container hero-inner">
-          <div class="hero-main">
-            <p class="hero-eyebrow reveal">Full Stack AI Systems Engineer</p>
-            <h1 class="hero-name reveal" id="hero-name" style="--d: 0.05s">
-              <span class="name-line">Lautaro</span>
-              <span class="name-line name-italic">Waltersdorf</span>
-            </h1>
-            <p class="hero-lead reveal" style="--d: 0.12s">
-              Full-stack AI systems architect with four years building for the web.
-              I architect parallel pipelines that ship advanced work in days, not
-              months. Daily stack: orchestrated Python workers (Scrapy), live Node UI,
-              and AI integration wired in through APIs. I work AI-native with Claude
-              Code, the Claude CLI and minimax, and own problems end to end — scope to
-              deploy.
+    <!-- ───────── Hero ───────── -->
+    <header class="hero">
+      <div class="container">
+        <nav class="topbar" aria-label="Principal">
+          <a class="brand" href="#top">Lautaro Waltersdorf</a>
+          <div class="topbar-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#trabajos">Trabajos</a>
+            <a href="#preguntas">Preguntas</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Páginas express</p>
+            <h1>Tu negocio en internet, <span class="hl">listo en 24hs</span></h1>
+            <p class="lead">
+              Hago páginas web simples y prolijas, que se ven bien en el celular, para que tus clientes te
+              encuentren y te escriban directo por WhatsApp.
             </p>
-            <div class="hero-actions reveal" style="--d: 0.18s">
-              <a class="btn btn-primary" href="#work">See my work</a>
-              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            <div class="cta-row">
+              <a class="btn btn-yellow" href="https://wa.me/5491144400101?text=Hola%20Lautaro%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20consultar%20por%20una%20p%C3%A1gina%20web%20para%20mi%20negocio">Escribime por WhatsApp</a>
+              <a class="btn btn-ghost" href="#trabajos">Ver trabajos</a>
             </div>
           </div>
-          <aside class="hero-stats reveal" style="--d: 0.24s" aria-label="Key stats">
-            <dl class="hero-stats-list">
-              <div class="hero-stat">
-                <dt class="hero-stat-num">4+</dt>
-                <dd class="hero-stat-label">years building for the web</dd>
-              </div>
-              <div class="hero-stat">
-                <dt class="hero-stat-num">C1</dt>
-                <dd class="hero-stat-label">English (EF SET certified)</dd>
-              </div>
-              <div class="hero-stat">
-                <dt class="hero-stat-num">2</dt>
-                <dd class="hero-stat-label">featured projects</dd>
-              </div>
-            </dl>
-          </aside>
+
+          <div class="hero-card" aria-label="Precio del sitio web">
+            <p class="hero-card-label">Sitio web</p>
+            <p class="price-pill">$20.000</p>
+            <ul class="checks checks-light">
+              <li>Publicada en 24hs</li>
+              <li>Sin abono mensual</li>
+              <li>Se ve bien en celular</li>
+              <li>2 rondas de cambios</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ───────── Servicios ───────── -->
+      <section class="section" id="servicios" aria-labelledby="servicios-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow eyebrow-dark">Servicios</p>
+            <h2 id="servicios-title">Qué hago y cuánto cuesta</h2>
+          </div>
+
+          <div class="cards">
+            <article class="card reveal">
+              <p class="card-kicker">Para mostrar tu negocio</p>
+              <h3>Sitio web</h3>
+              <p class="price">$20.000</p>
+              <p class="card-text">
+                Quiénes son, qué ofrecen y cómo contactarlos, todo en una página clara.
+              </p>
+              <ul class="checks">
+                <li>Diseño pensado para tu rubro</li>
+                <li>Se ve bien en celular y en computadora</li>
+                <li>Botón de WhatsApp, dirección, horarios y mapa</li>
+                <li>Tus servicios, fotos y redes</li>
+                <li>Publicada en internet dentro de las 24hs, sin abono mensual</li>
+                <li>2 rondas de cambios</li>
+              </ul>
+            </article>
+
+            <article class="card card-featured reveal" style="--d: 0.08s">
+              <p class="card-kicker">Para algo más que una página</p>
+              <h3>Sitio con sistema</h3>
+              <p class="price">$100.000</p>
+              <p class="card-text">
+                Cuando necesitás que tus clientes reserven, que vos cargues productos o que se guarde información.
+              </p>
+              <ul class="checks">
+                <li>Todo lo del sitio web</li>
+                <li>Catálogo de productos que vos mismo actualizás</li>
+                <li>Sistema de turnos o reservas</li>
+                <li>Formularios que guardan los datos de tus clientes</li>
+                <li>Panel simple para administrar todo</li>
+                <li>Sin abono mensual de hosting</li>
+              </ul>
+              <p class="card-note">El alcance exacto lo definimos juntos antes de empezar.</p>
+            </article>
+          </div>
+
+          <div class="extras reveal">
+            <div class="extra">
+              <p class="extra-title">Dirección propia (tunegocio.com.ar)</p>
+              <p class="extra-text">Opcional: <strong>$10.000 por año</strong></p>
+            </div>
+            <div class="extra">
+              <p class="extra-title">Cómo se paga</p>
+              <p class="extra-text"><strong>Seña del 50%</strong> para empezar, el resto al entregar</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- ───────── Work / projects ───────── -->
-      <section class="section work-section" id="work" aria-labelledby="work-title">
+      <!-- ───────── Trabajos ───────── -->
+      <section class="section section-alt" id="trabajos" aria-labelledby="trabajos-title">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow">Selected work</p>
-            <h2 class="section-title" id="work-title">Things I've built</h2>
+            <p class="eyebrow eyebrow-dark">Trabajos</p>
+            <h2 id="trabajos-title">Sitios que hice</h2>
           </div>
-        </div>
 
-        <!-- Project 01 — 3D Car Visualizer -->
-        <article class="project" id="project-cars-3d">
-          <div class="container project-inner">
-            <div class="project-media reveal" aria-label="Video preview of the 3D Car Visualizer">
+          <!-- Trabajo 01 — Electrodel -->
+          <article class="project" id="trabajo-electrodel">
+            <div class="project-media reveal">
+              <video class="project-video" autoplay muted loop playsinline controls preload="metadata">
+                <source src="videos/electrodel.webm" type="video/webm" />
+              </video>
+              <div class="project-media-placeholder" aria-hidden="true">
+                <span class="placeholder-label">Video próximamente</span>
+                <span class="placeholder-sub">videos/electrodel.webm</span>
+              </div>
+            </div>
+            <div class="project-body reveal" style="--d: 0.08s">
+              <p class="project-num">01 · Sitio con sistema · cliente de hace años</p>
+              <h3>Electrodel</h3>
+              <a class="project-live" href="https://electrodel.com.ar" target="_blank" rel="noopener">electrodel.com.ar ↗</a>
+              <p class="project-text">
+                Tienda online de electricidad e iluminación para el hogar y el negocio, en Lago Puelo, Chubut.
+                Es un cliente con el que trabajo desde hace años.
+              </p>
+              <ul class="checks">
+                <li>Catálogo con categorías y subcategorías: iluminación, electricidad, herramientas y más</li>
+                <li>Envíos según la zona de cada cliente</li>
+                <li>Banners de promociones en la portada</li>
+                <li>Botón de WhatsApp, dirección y horarios de atención</li>
+                <li>Panel de administración interno, completo, para manejar el negocio</li>
+                <li>Base de datos, preguntas frecuentes y dirección propia (.com.ar)</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Trabajo 02 — Emma -->
+          <article class="project project-flip" id="trabajo-emma">
+            <div class="project-media reveal">
+              <video class="project-video" autoplay muted loop playsinline controls preload="metadata">
+                <source src="videos/emma.webm" type="video/webm" />
+              </video>
+              <div class="project-media-placeholder" aria-hidden="true">
+                <span class="placeholder-label">Video próximamente</span>
+                <span class="placeholder-sub">videos/emma.webm</span>
+              </div>
+            </div>
+            <div class="project-body reveal" style="--d: 0.08s">
+              <p class="project-num">02 · Sitio con sistema · en mejoras</p>
+              <h3>Emma — Moda a tu Alcance</h3>
+              <a class="project-live" href="https://moda-a-tu-alcance.vercel.app/" target="_blank" rel="noopener">moda-a-tu-alcance.vercel.app ↗</a>
+              <p class="project-text">
+                Tienda de ropa y accesorios para mujer y hombre, con carrito y pedidos que se coordinan por WhatsApp.
+              </p>
+              <ul class="checks">
+                <li>Catálogo por categorías: mujer, hombre, maquillaje y ofertas</li>
+                <li>Carrito y envío del pedido por WhatsApp</li>
+                <li>Pagos con Mercado Pago</li>
+                <li>Preguntas frecuentes sobre talles, envíos y cambios</li>
+                <li>Base de datos para el catálogo</li>
+                <li>Conectada con su Instagram</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Trabajo 03 — Autos 3D (proyecto especial) -->
+          <article class="project" id="trabajo-autos">
+            <div class="project-media reveal">
               <video
                 class="project-video"
                 autoplay
@@ -82,672 +200,129 @@
                 controls
                 preload="metadata"
                 poster="videos/cars-3d-poster.jpg"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
               >
                 <source src="videos/cars-3d.webm" type="video/webm" />
               </video>
               <div class="project-media-placeholder" aria-hidden="true">
-                <span class="placeholder-label">Video preview</span>
+                <span class="placeholder-label">Video próximamente</span>
                 <span class="placeholder-sub">videos/cars-3d.webm</span>
               </div>
             </div>
-
             <div class="project-body reveal" style="--d: 0.08s">
-              <p class="project-num">01</p>
-              <h3 class="project-title">3D Car Visualizer <span class="project-tagline">— orchestrated end to end</span></h3>
-              <a
-                class="project-live"
-                href="https://cars-3d.lautarowaltersdorf.com/"
-                target="_blank"
-                rel="noopener"
-              >
-                cars-3d.lautarowaltersdorf.com
-                <span aria-hidden="true">↗</span>
-              </a>
-
-              <div class="project-block">
-                <h4>What it is</h4>
-                <p>
-                  An immersive, real-time 3D car configurator that runs entirely
-                  in the browser. I <strong>orchestrated the full 3D
-                  visualization end to end</strong> — scene, frontend and audio
-                  generated around Sketchfab models — then shipped it with a
-                  cinematic camera intro, studio HDR lighting and physically-based
-                  materials. No plugin, no app, just a link.
-                </p>
-              </div>
-
-              <div class="project-block">
-                <h4>What you can do</h4>
-                <ul class="project-do">
-                  <li>Drag to orbit the car in full 3D</li>
-                  <li>Change the paint colour on the fly</li>
-                  <li>Hit the gas to rev the engine with synced audio</li>
-                  <li>Go fullscreen for the showroom view</li>
-                </ul>
-              </div>
-
-              <div class="project-block">
-                <h4>Tech stack</h4>
-                <ul class="project-tech">
-                  <li>Three.js</li>
-                  <li>WebGL</li>
-                  <li>GLTF / GLB</li>
-                  <li>Tween.js</li>
-                  <li>HDR / IBL</li>
-                  <li>Web Audio</li>
-                  <li>Vanilla JS</li>
-                </ul>
-              </div>
-
-              <div class="project-block">
-                <h4>Key features</h4>
-                <ul class="project-features">
-                  <li>ACES filmic tone mapping with image-based studio lighting</li>
-                  <li>Cinematic tweened camera intro on load</li>
-                  <li>Mobile-aware rendering — adaptive pixel ratio and quality</li>
-                  <li>Interactive paint, fullscreen mode and engine audio</li>
-                  <li>Loads from a single static URL, no backend required</li>
-                </ul>
-              </div>
-
-              <div class="project-block">
-                <h4>Hard problem solved</h4>
-                <p>
-                  The engine wind-down is the part that usually sounds fake.
-                  Instead of synthesising a pitch-down, it plays a window cut
-                  from the tail of the real rev recording — anchored to the
-                  decay and cross-faded into a looping idle — so deceleration
-                  sounds like physics, not a toy. Audio also self-initialises
-                  muted on load so consent survives a fast load, and a single
-                  device check scales back blur, lighting and reflection size
-                  to keep phones smooth without a forked build.
-                </p>
-                <a
-                  class="project-code"
-                  href="https://github.com/Tdansistod/cars-3d#readme"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Read the full engineering write-up on GitHub
-                  <span aria-hidden="true">↗</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Project 02 — Media Monitor / Monitoring dashboard -->
-        <article class="project project-reverse" id="project-media-monitor">
-          <div class="container project-inner">
-            <div class="project-media reveal" aria-label="Video preview of the Media Monitor dashboard">
-              <video
-                class="project-video"
-                autoplay
-                muted
-                loop
-                playsinline
-                controls
-                preload="metadata"
-                poster="videos/media-monitor-poster.jpg"
-                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-              >
-                <source src="videos/media-monitor.webm" type="video/webm" />
-              </video>
-              <div class="project-media-placeholder" aria-hidden="true">
-                <span class="placeholder-label">Video preview</span>
-                <span class="placeholder-sub">videos/media-monitor.webm</span>
-              </div>
-            </div>
-
-            <div class="project-body reveal" style="--d: 0.08s">
-              <p class="project-num">02</p>
-              <h3 class="project-title">Media Monitor <span class="project-tagline">— AI data pipeline</span></h3>
-              <a
-                class="project-live"
-                href="https://media-monitor.lautarowaltersdorf.com/"
-                target="_blank"
-                rel="noopener"
-              >
-                media-monitor.lautarowaltersdorf.com
-                <span aria-hidden="true">↗</span>
-              </a>
-
-              <div class="project-block">
-                <h4>What it is</h4>
-                <p>
-                  A <strong>parallel AI data pipeline</strong> built from a real
-                  PR-agency brief: orchestrated Python workers collect press coverage
-                  in parallel underneath, an AI enrichment layer dedups it and runs
-                  sentiment analysis and AVE, and a live monitoring UI surfaces KPIs,
-                  a mentions feed, share of voice and a geographic map on top. Switch
-                  between clients, browse by month and export branded reports. The
-                  live demo runs on a seeded snapshot so it loads instantly; in
-                  production these views are fed by the orchestrated ingestion and
-                  enrichment pipeline described below.
-                </p>
-              </div>
-
-              <div class="project-block">
-                <h4>What you can do</h4>
-                <ul class="project-do">
-                  <li>Switch clients and browse coverage month by month</li>
-                  <li>Read the live mentions feed and filter by sentiment, outlet and tier</li>
-                  <li>Track KPIs — mentions, AVE, reach and share of voice</li>
-                  <li>Open a mention for full detail and review alerts</li>
-                  <li>Generate an executive PDF report to export or email</li>
-                </ul>
-              </div>
-
-              <div class="project-block">
-                <h4>Tech stack</h4>
-                <ul class="project-tech">
-                  <li>Python</li>
-                  <li>Scrapy</li>
-                  <li>Playwright</li>
-                  <li>Vanilla JS</li>
-                  <li>ApexCharts</li>
-                  <li>Leaflet</li>
-                  <li>localStorage</li>
-                  <li>PWA manifest</li>
-                </ul>
-              </div>
-
-              <div class="project-block">
-                <h4>Key features</h4>
-                <ul class="project-features">
-                  <li>Live KPI cards with month-over-month deltas</li>
-                  <li>Sentiment breakdown, trend lines and volume charts</li>
-                  <li>Share of voice vs. competitors and a geographic mention map</li>
-                  <li>Filterable mentions feed with per-mention detail sheets</li>
-                  <li>Multi-client switcher, alerts view and PDF report export</li>
-                  <li>Light/dark theme, responsive layout and PWA install</li>
-                </ul>
-              </div>
-
-              <div class="project-block">
-                <h4>Hard problem solved</h4>
-                <p>
-                  The real work is the ingestion engine behind the dashboard:
-                  a Scrapy crawler with AutoThrottle, retry/back-off and a
-                  per-domain circuit breaker, escalating to Playwright only for
-                  JS-rendered, consent- and paywall-gated outlets. The trick was
-                  making Playwright session-aware — a persistent browser context
-                  per domain solves the consent/paywall handshake once and
-                  reuses it — then feeding that hydrated HTML back into the same
-                  pipeline (dedup, sentiment, AVE) as the cheap HTTP path.
-                </p>
-                <a
-                  class="project-code"
-                  href="https://github.com/Tdansistod/media-monitor#readme"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Read the full backend write-up on GitHub
-                  <span aria-hidden="true">↗</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Highlight — Scraper Infrastructure -->
-        <div class="container">
-          <div class="skills-grid">
-            <article class="skill-card reveal" id="project-scraper-infra">
-              <h3>Scraper Infrastructure</h3>
-              <p>
-                The multi-layer data pipeline that powers the work above — a UI
-                monitoring panel on top, background Python workers (Scrapy on cron,
-                with auto start/shutdown) doing parallel collection underneath, and an
-                AI intelligence layer exposed through API endpoints. It's the
-                orchestration pattern I reach for: collect in parallel, enrich with AI,
-                run it in production.
+              <p class="project-num">03 · Proyecto especial</p>
+              <h3>Visualizador 3D de autos</h3>
+              <a class="project-live" href="https://cars-3d.lautarowaltersdorf.com/" target="_blank" rel="noopener">cars-3d.lautarowaltersdorf.com ↗</a>
+              <p class="project-text">
+                Un proyecto experimental para mostrar hasta dónde se puede llegar con una página web: un auto en 3D que
+                se mueve, cambia de color y suena, directo desde un link.
               </p>
-              <ul class="skill-tags">
-                <li>Playwright</li>
-                <li>Python / Scrapy</li>
-                <li>Node.js</li>
-                <li>cron</li>
-                <li>Ubuntu server automation</li>
-                <li>REST API</li>
+              <ul class="checks">
+                <li>Girá el auto en 3D con el mouse o el dedo</li>
+                <li>Cambiá el color de la pintura</li>
+                <li>Sonido de motor sincronizado</li>
+                <li>Pantalla completa, sin instalar nada</li>
               </ul>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- ───────── Personal tools ───────── -->
-      <section class="section tools-section" id="tools" aria-labelledby="tools-title">
+      <!-- ───────── Cómo trabajo ───────── -->
+      <section class="section" id="como" aria-labelledby="como-title">
         <div class="container">
           <div class="section-head reveal">
-            <p class="section-eyebrow">Personal tools</p>
-            <h2 class="section-title" id="tools-title">
-              AI tools I built for myself
-            </h2>
-            <p class="section-lead reveal" style="--d: 0.06s">
-              Small, focused demos I built to learn the patterns — each one
-              wires an LLM to a real interface and ships as a working app.
-              Open source so others can fork them.
-            </p>
+            <p class="eyebrow eyebrow-dark">Cómo trabajamos</p>
+            <h2 id="como-title">En cuatro pasos</h2>
           </div>
-
-          <div class="tools-grid">
-            <article class="tool-card reveal">
-              <p class="tool-num">01</p>
-              <h3 class="tool-title">English Basics</h3>
-              <p class="tool-tagline">AI English tutor for Spanish speakers</p>
-              <p class="tool-body">
-                A focused grammar and vocabulary tutor that explains rules
-                in Spanish, shows examples in English, and quizzes you
-                until the pattern sticks.
-              </p>
-              <ul class="tool-features">
-                <li>Spanish-first explanations of English rules</li>
-                <li>Adaptive grammar and vocabulary drills</li>
-                <li>Conversational practice with AI feedback</li>
-              </ul>
-              <a
-                class="project-code"
-                href="https://github.com/Tdansistod/english-basics-demo"
-                target="_blank"
-                rel="noopener"
-              >
-                View on GitHub <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-
-            <article class="tool-card reveal" style="--d: 0.06s">
-              <p class="tool-num">02</p>
-              <h3 class="tool-title">English Interview</h3>
-              <p class="tool-tagline">AI mock interviews with grammar feedback</p>
-              <p class="tool-body">
-                A spoken-English interview simulator. It asks the questions,
-                listens to your answers, and grades grammar, vocabulary and
-                structure line by line so you know what to fix.
-              </p>
-              <ul class="tool-features">
-                <li>Voice-driven mock interview flow</li>
-                <li>Per-sentence grammar corrections</li>
-                <li>Actionable feedback after each answer</li>
-              </ul>
-              <a
-                class="project-code"
-                href="https://github.com/Tdansistod/english-interview-demo"
-                target="_blank"
-                rel="noopener"
-              >
-                View on GitHub <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-
-            <article class="tool-card reveal" style="--d: 0.12s">
-              <p class="tool-num">03</p>
-              <h3 class="tool-title">Interview Practice</h3>
-              <p class="tool-tagline">AI technical interview simulator</p>
-              <p class="tool-body">
-                A technical interview simulator for coding roles — picks a
-                problem, takes your solution, and runs the kind of follow-up
-                an interviewer would: edge cases, complexity, trade-offs.
-              </p>
-              <ul class="tool-features">
-                <li>Curated problem bank with hints</li>
-                <li>Code review and follow-up questions</li>
-                <li>Targeted feedback on correctness and style</li>
-              </ul>
-              <a
-                class="project-code"
-                href="https://github.com/Tdansistod/interview-practice-demo"
-                target="_blank"
-                rel="noopener"
-              >
-                View on GitHub <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ───────── Tech stack ───────── -->
-      <section class="section skills-section" id="stack" aria-labelledby="stack-title">
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="section-eyebrow">Tech stack</p>
-            <h2 class="section-title" id="stack-title">
-              The tools I build with
-            </h2>
-          </div>
-
-          <div class="skills-grid">
-            <article class="skill-card reveal">
-              <h3>AI systems</h3>
-              <p>
-                I build with AI in the loop every day and design the orchestration,
-                not just the API call — agentic workflows, multi-step pipelines and
-                LLM-driven tooling. Claude Code and the Claude CLI run my dev loop;
-                minimax for fast iteration. It's how I ship a lot, fast.
-              </p>
-              <ul class="skill-tags">
-                <li>Claude Code</li>
-                <li>Claude CLI</li>
-                <li>minimax</li>
-                <li>LLM orchestration</li>
-                <li>Agentic workflows</li>
-                <li>AI-native dev</li>
-              </ul>
-            </article>
-
-            <article class="skill-card reveal" style="--d: 0.06s">
-              <h3>Frontend</h3>
-              <p>
-                Responsive, accessible interfaces with semantic HTML, modern CSS
-                and JavaScript — plus React, Redux and Next.js for richer single-page
-                apps. I care about motion, type and the small details that make a
-                page feel considered.
-              </p>
-              <ul class="skill-tags">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Next.js</li>
-                <li>Three.js</li>
-              </ul>
-            </article>
-
-            <article class="skill-card reveal" style="--d: 0.12s">
-              <h3>Backend</h3>
-              <p>
-                REST APIs, real-time features and relational data. I scope the
-                data model, wire up the endpoints with Node, Express, PHP or
-                Python — and reach for Supabase when a project wants managed
-                Postgres and auth out of the box.
-              </p>
-              <ul class="skill-tags">
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>REST APIs</li>
-                <li>WebSockets</li>
-                <li>PostgreSQL</li>
-                <li>Supabase</li>
-                <li>MySQL</li>
-              </ul>
-            </article>
-
-            <article class="skill-card reveal" style="--d: 0.18s">
-              <h3>Infrastructure &amp; tooling</h3>
-              <p>
-                I deploy and run what I build — configuring and administering VPS
-                servers on OpenLiteSpeed, automating browser checks with
-                Playwright, and keeping a clean Git history and a
-                command-line-first workflow throughout.
-              </p>
-              <ul class="skill-tags">
-                <li>VPS</li>
-                <li>OpenLiteSpeed</li>
-                <li>Playwright</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>CLI</li>
-              </ul>
-            </article>
-
-            <article class="skill-card reveal" style="--d: 0.24s">
-              <h3>Design tools</h3>
-              <p>
-                Design isn't a separate phase for me. I move from Figma to code
-                directly, and reach for Photoshop and After Effects when a project
-                needs custom imagery or motion.
-              </p>
-              <ul class="skill-tags">
-                <li>Figma</li>
-                <li>Photoshop</li>
-                <li>After Effects</li>
-                <li>UI / UX</li>
-                <li>Responsive design</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ───────── Experience ───────── -->
-      <section
-        class="section experience-section"
-        id="experience"
-        aria-labelledby="experience-title"
-      >
-        <div class="container">
-          <div class="section-head reveal">
-            <p class="section-eyebrow">Experience</p>
-            <h2 class="section-title" id="experience-title">
-              Where I've shipped
-            </h2>
-          </div>
-
-          <ol class="timeline">
-            <li class="timeline-item reveal">
-              <div class="timeline-head">
-                <h3 class="timeline-role">Founder &amp; Full Stack Developer</h3>
-                <span class="timeline-meta">Apr 2026 – May 2026 · 2 months</span>
-              </div>
-              <p class="timeline-org">Web Factory Studio · Entrepreneurial exploration · LATAM market (remote)</p>
-              <p class="timeline-summary">
-                Launched <em>Web Factory Studio</em> as a two-month market
-                exploration — a web and native app studio idea I took from concept
-                to real client conversations, testing whether there was demand for
-                high-quality, design-led product work in Latin America.
-              </p>
-              <ul class="timeline-points">
-                <li>
-                  Validated the concept hands-on: built creative demos, ran
-                  outreach and held client meetings to test real market appetite.
-                </li>
-                <li>
-                  Learned the market wasn't ready — budgets and interest in the
-                  region didn't support the kind of work I wanted to deliver.
-                </li>
-                <li>
-                  Owned the whole thing end to end: scoping, pitching, demos and
-                  client relationships under real-world constraints.
-                </li>
-                <li>
-                  Took the honest read and pivoted — channeling that initiative and
-                  business sense into finding the right team to build with.
-                </li>
-              </ul>
-              <ul class="timeline-tech">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Three.js</li>
-                <li>Node.js</li>
-                <li>Native apps</li>
-                <li>UI/UX</li>
-                <li>Figma</li>
-              </ul>
+          <ol class="steps">
+            <li class="step reveal">
+              <span class="step-num">1</span>
+              <h3>Me escribís</h3>
+              <p>Me contás de tu negocio y qué necesitás.</p>
             </li>
-
-            <li class="timeline-item reveal" style="--d: 0.08s">
-              <div class="timeline-head">
-                <h3 class="timeline-role">Full Stack Developer — Freelance</h3>
-                <span class="timeline-meta">Feb 2024 – Nov 2024 · 10 months</span>
-              </div>
-              <p class="timeline-org">W Diseño Web · Own business · Argentina (remote)</p>
-              <p class="timeline-summary">
-                Built complete, custom web solutions for a range of businesses —
-                owning both the user-facing interfaces and robust backend systems
-                end to end.
-              </p>
-              <ul class="timeline-points">
-                <li>
-                  Delivered bespoke sites and web apps from scratch, tailored to
-                  each client's needs.
-                </li>
-                <li>
-                  Designed intuitive, attractive UI/UX with a focus on advanced
-                  CSS and responsive layouts.
-                </li>
-                <li>
-                  Streamlined clients' internal management, production and sales
-                  using Node.js, Express and WebSockets.
-                </li>
-                <li>
-                  Configured and administered VPS servers on OpenLiteSpeed for
-                  secure, performant deployments.
-                </li>
-              </ul>
-              <ul class="timeline-tech">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>WebSockets</li>
-                <li>VPS / OpenLiteSpeed</li>
-                <li>Figma</li>
-              </ul>
+            <li class="step reveal" style="--d: 0.06s">
+              <span class="step-num">2</span>
+              <h3>Seña y material</h3>
+              <p>Seña del 50% y me pasás logo, fotos y textos. Si no los tenés, te ayudo a ordenarlos.</p>
+            </li>
+            <li class="step reveal" style="--d: 0.12s">
+              <span class="step-num">3</span>
+              <h3>Ajustamos</h3>
+              <p>Te muestro la página y hacemos los cambios acordados.</p>
+            </li>
+            <li class="step reveal" style="--d: 0.18s">
+              <span class="step-num">4</span>
+              <h3>Queda publicada</h3>
+              <p>Pagás el resto y tu página queda online.</p>
             </li>
           </ol>
         </div>
       </section>
 
-      <!-- ───────── Education ───────── -->
-      <section
-        class="section education-section"
-        id="education"
-        aria-labelledby="education-title"
-      >
+      <!-- ───────── Preguntas ───────── -->
+      <section class="section section-alt" id="preguntas" aria-labelledby="preguntas-title">
+        <div class="container container-narrow">
+          <div class="section-head reveal">
+            <p class="eyebrow eyebrow-dark">Preguntas frecuentes</p>
+            <h2 id="preguntas-title">Lo que más me preguntan</h2>
+          </div>
+          <div class="faq reveal">
+            <details>
+              <summary>¿Qué necesito para empezar?</summary>
+              <p>Logo, fotos y textos de tu negocio. Si no los tenés, te ayudo a ordenar la idea; en ese caso el plazo puede ser un poco mayor.</p>
+            </details>
+            <details>
+              <summary>¿Cuándo empiezan a contar las 24hs?</summary>
+              <p>Desde que recibo la seña y el material. El tiempo que tardes en responderme no cuenta.</p>
+            </details>
+            <details>
+              <summary>¿Qué incluyen las 2 rondas de cambios?</summary>
+              <p>Cambios chicos: textos, colores, fotos. Cambios grandes de diseño o de estructura, y los cambios que pidas después de esas rondas, se presupuestan aparte.</p>
+            </details>
+            <details>
+              <summary>¿Tengo que pagar un abono mensual?</summary>
+              <p>No. La página queda publicada sin abono mensual. Lo único opcional es la dirección propia: $10.000 por año.</p>
+            </details>
+            <details>
+              <summary>¿Qué es la dirección propia?</summary>
+              <p>Es el nombre con el que te encuentran, por ejemplo tunegocio.com.ar. Si no querés una, tu página funciona igual con una dirección provisoria.</p>
+            </details>
+            <details>
+              <summary>¿Cómo se paga?</summary>
+              <p>Seña del 50% para empezar y el resto al entregar. Los medios de pago los coordinamos por WhatsApp.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ───────── Contacto ───────── -->
+      <section class="section contact" id="contacto" aria-labelledby="contacto-title">
         <div class="container">
-          <div class="section-head reveal">
-            <p class="section-eyebrow">Education</p>
-            <h2 class="section-title" id="education-title">
-              How I got here
-            </h2>
+          <div class="contact-box reveal">
+            <h2 id="contacto-title">Contame de tu negocio</h2>
+            <p class="lead">Escribime y te digo qué necesitás, cuánto sale y cuándo lo tenés.</p>
+            <div class="cta-row cta-center">
+              <a class="btn btn-yellow" href="https://wa.me/5491144400101?text=Hola%20Lautaro%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20consultar%20por%20una%20p%C3%A1gina%20web%20para%20mi%20negocio">WhatsApp 11 4440-0101</a>
+              <a class="btn btn-ghost" href="mailto:lautaronuriel@gmail.com">lautaronuriel@gmail.com</a>
+            </div>
+            <p class="contact-place">Ciudad de Buenos Aires, Argentina</p>
           </div>
-
-          <div class="education-grid">
-            <article class="education-card reveal">
-              <h3>Full Stack Web Developer</h3>
-              <p class="education-org">Henry — Intensive Bootcamp</p>
-              <p class="education-meta">6-month intensive program</p>
-            </article>
-
-            <article class="education-card reveal" style="--d: 0.06s">
-              <h3>Aeronautical Engineering</h3>
-              <p class="education-org">Universidad Tecnológica Nacional</p>
-              <p class="education-meta">5 years · incomplete</p>
-            </article>
-
-            <article class="education-card reveal" style="--d: 0.12s">
-              <h3>Technical Degree — Electrical &amp; Electronic Engineering</h3>
-              <p class="education-org">Escuela Técnica Nº 28 "República Francesa"</p>
-              <p class="education-meta">6-year technical secondary program</p>
-            </article>
-
-            <article class="education-card reveal" style="--d: 0.18s">
-              <h3>English — C1 Advanced</h3>
-              <p class="education-org">EF SET English Certificate</p>
-              <p class="education-meta">
-                <a
-                  href="https://efset.org/cert/7NgAiW"
-                  target="_blank"
-                  rel="noopener"
-                  >Verified certificate ↗</a
-                >
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ───────── About ───────── -->
-      <section class="section about-section" id="about" aria-labelledby="about-title">
-        <div class="container about-inner">
-          <div class="section-head reveal">
-            <p class="section-eyebrow">About</p>
-            <h2 class="section-title" id="about-title">A bit about me</h2>
-          </div>
-          <div class="about-body reveal" style="--d: 0.06s">
-            <p>
-              I came to the web from an engineering background — electronics, then
-              aeronautics — and that's the lens I still bring to it: I like
-              understanding the whole system, not just the layer I'm working on.
-              It's why I'm as happy reasoning about a backend, an AI pipeline or a
-              deployment as I am sweating the type and motion on the front end.
-            </p>
-            <p>
-              These days that systems instinct goes into AI. I architect parallel
-              pipelines that ship advanced work in days, not months — orchestrated
-              Python workers (Scrapy), a live Node UI, and AI integration wired in
-              through APIs. I work AI-native with Claude Code, the Claude CLI and
-              minimax, thinking about the orchestration around a model, not just the
-              API call. It lets me ship more, faster, without giving up the polish.
-            </p>
-            <p>
-              Running my own studio for a stretch taught me the rest. Pitching,
-              scoping and shipping for real clients under real constraints made me
-              someone who owns a problem end to end and cares about the result, not
-              just the ticket. I work best with people who hold the same bar.
-            </p>
-            <p>
-              I'm based in El Bolsón, Argentina, and work remotely. Always learning,
-              and looking for a team where I can do my best work over the long run.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ───────── Contact ───────── -->
-      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="container contact-inner reveal">
-          <p class="section-eyebrow">Contact</p>
-          <h2 class="contact-title" id="contact-title">
-            Let's build something together.
-          </h2>
-          <p class="contact-lead">
-            Looking for someone who can build AI systems end to end and make them
-            feel good to use? I'd love to hear what you're working on.
-          </p>
-          <ul class="contact-links">
-            <li>
-              <a href="mailto:lautaronuriel@gmail.com">
-                <span class="contact-link-label">Email</span>
-                <span class="contact-link-value">lautaronuriel@gmail.com</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/Tdansistod" target="_blank" rel="noopener">
-                <span class="contact-link-label">GitHub</span>
-                <span class="contact-link-value">github.com/Tdansistod ↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/lautaro-waltersdorf" target="_blank" rel="noopener">
-                <span class="contact-link-label">LinkedIn</span>
-                <span class="contact-link-value">in/lautaro-waltersdorf ↗</span>
-              </a>
-            </li>
-          </ul>
         </div>
       </section>
     </main>
 
-    <!-- ───────── Footer ───────── -->
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <span class="footer-name">Lautaro Waltersdorf</span>
-        <span class="footer-meta">Full Stack AI Systems Engineer · Building AI-native products end to end</span>
-        <span class="footer-year">© 2026</span>
+      <div class="container">
+        <p>© 2026 Lautaro Waltersdorf</p>
       </div>
     </footer>
 
-    <script type="module" src="script.js"></script>
+    <a
+      class="wa-float"
+      href="https://wa.me/5491144400101?text=Hola%20Lautaro%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20consultar%20por%20una%20p%C3%A1gina%20web%20para%20mi%20negocio"
+      aria-label="Escribime por WhatsApp"
+    >WhatsApp</a>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Lautaro Waltersdorf">
-  <rect width="64" height="64" rx="14" fill="#0e0c0a"/>
-  <g fill="none" stroke="#e25d29" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-    <!-- L -->
-    <path d="M16 16 V44 H30"/>
-    <!-- W -->
-    <path d="M33 22 L38 44 L43 30 L48 44 L53 22" stroke="#f4a261"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0b0b0c"/><text x="32" y="42" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="900" font-style="italic" font-size="28" fill="#ffd21a">LW</text></svg>
