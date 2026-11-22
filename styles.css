@@ -215,6 +215,7 @@ h3 { font-size: 1.5rem; }
   padding: 0.5rem 1rem;
   border-radius: 14px;
 }
+.cur { font-size: 0.36em; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; margin-left: 0.15em; }
 .price-note { font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--navy); margin-top: -0.4rem; }
 .hero-card .price-note { color: var(--yellow); margin: -0.6rem 0 1.1rem; }
 .card-text { color: var(--muted); }
