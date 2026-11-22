@@ -407,3 +407,9 @@ h3 { font-size: 1.5rem; }
 .muestra h3 { font-size: 1.15rem; color: var(--navy); margin-top: 1rem; }
 .muestra p { color: var(--muted); font-size: 0.9rem; }
 @media (min-width: 760px) { .muestras { grid-template-columns: repeat(3, 1fr); } }
+
+/* Imagen larga que se desplaza sola dentro del marco */
+.scroll-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; animation: scroll-img 14s ease-in-out infinite alternate; }
+.project-media:hover .scroll-img { animation-play-state: paused; }
+@keyframes scroll-img { 0%, 10% { object-position: 50% 0%; } 90%, 100% { object-position: 50% 100%; } }
+@media (prefers-reduced-motion: reduce) { .scroll-img { animation: none; } }
