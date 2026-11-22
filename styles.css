@@ -21,6 +21,25 @@
 
 html { scroll-behavior: smooth; scroll-padding-top: 1rem; }
 
+/* ───────── Barra de scroll (PC) ─────────
+   Chrome, Edge y Safari usan ::-webkit-scrollbar; Firefox usa las propiedades estándar. */
+@supports (-moz-appearance: none) {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--yellow) var(--navy);
+  }
+}
+
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb {
+  background: var(--yellow);
+  border: 3px solid var(--navy);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--yellow-soft); }
+::-webkit-scrollbar-corner { background: var(--navy); }
+
 body {
   background: var(--bg);
   color: var(--ink);
