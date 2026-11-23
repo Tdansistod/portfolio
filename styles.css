@@ -505,7 +505,7 @@ h3 {
 .step {
   background: var(--white);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .step-num {
   display: inline-grid;
@@ -863,7 +863,7 @@ h3 {
 
 /* Imagen de la reunión en Cómo trabajamos */
 .como-visual {
-  margin: 0 0 2rem;
+  margin: 2rem auto;
   border-radius: var(--radius);
   overflow: hidden;
   background: #141414;
