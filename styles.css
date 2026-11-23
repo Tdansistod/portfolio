@@ -502,6 +502,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+  max-width: 50rem;
 }
 .step {
   background: var(--white);
