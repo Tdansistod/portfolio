@@ -6,8 +6,10 @@
   --bg: #252525;
   --white: #ffffff;
   --ink: #111111;
-  --muted: #5d5d57;
+  --muted: #a9a9a1;
   --line: #e2e0d6;
+  --text-soft: rgba(255, 255, 255, 0.78);
+  --border: rgba(255, 255, 255, 0.1);
 
   --max-width: 1120px;
   --radius: 20px;
@@ -135,8 +137,7 @@ ol {
   padding-bottom: 7rem;
   overflow: hidden;
 }
-.hero::before,
-.contact::before {
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -328,8 +329,9 @@ h3 {
   gap: 1.5rem;
 }
 .card {
-  background: var(--white);
-  border: 1px solid var(--line);
+  background: var(--navy);
+  color: var(--line);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 2rem;
   display: flex;
@@ -337,23 +339,41 @@ h3 {
   gap: 0.9rem;
 }
 .card-featured {
-  background: var(--navy);
-  color: var(--white);
-  border-color: var(--navy);
+  border-color: var(--yellow);
+  background:
+    linear-gradient(180deg, rgba(255, 210, 26, 0.09), transparent 45%),
+    var(--navy);
 }
 .card h3 {
-  color: var(--navy);
-}
-.card-featured h3 {
   color: var(--white);
 }
 .card-kicker {
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+.card-text {
+  color: var(--text-soft);
+}
+.card-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+.price-note {
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.card .price-note {
+  margin-top: -0.4rem;
   color: var(--muted);
 }
-.card-featured .card-kicker {
-  color: rgba(255, 255, 255, 0.7);
+.card-featured .price-note {
+  color: var(--yellow);
 }
 .price {
   align-self: flex-start;
@@ -373,28 +393,9 @@ h3 {
   text-transform: uppercase;
   margin-left: 0.15em;
 }
-.price-note {
-  font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--navy);
-  margin-top: -0.4rem;
-}
 .hero-card .price-note {
   color: var(--yellow);
   margin: -0.6rem 0 1.1rem;
-}
-.card-text {
-  color: var(--muted);
-}
-.card-featured .card-text {
-  color: rgba(255, 255, 255, 0.82);
-}
-.card-note {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin-top: 0.3rem;
 }
 
 .extras {
@@ -403,20 +404,20 @@ h3 {
   margin-top: 1.5rem;
 }
 .extra {
-  background: var(--white);
-  border: 2px dashed var(--navy);
+  background: var(--navy);
+  border: 2px dashed rgba(255, 210, 26, 0.55);
   border-radius: var(--radius);
   padding: 1.25rem 1.5rem;
 }
 .extra-title {
   font-weight: 700;
-  color: var(--navy);
+  color: var(--white);
 }
 .extra-text {
   color: var(--muted);
 }
 .extra-text strong {
-  color: var(--navy);
+  color: var(--white);
 }
 
 /* ───────── Trabajos ───────── */
@@ -499,32 +500,90 @@ h3 {
 
 /* ───────── Pasos ───────── */
 .steps {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-  max-width: 50rem;
-  margin: auto;
+  display: grid;
+  gap: 1.5rem;
+  max-width: 34rem;
+  margin: 0 auto;
 }
 .step {
+  display: flex;
+  flex-direction: column;
   background: var(--navy);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
 }
-.step img {
-  display: block;
-  width: 100%;
-  height: auto;
+.step-media {
+  position: relative;
   aspect-ratio: 16 / 9;
+  background: #161617;
+}
+.step-media img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.step h3 {
-  font-size: 1.2rem;
+.step-media-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.45);
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent 0 10px,
+    rgba(255, 255, 255, 0.04) 10px 20px
+  );
+}
+.step-num {
+  position: absolute;
+  left: 1.25rem;
+  bottom: -1.5rem;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 14px;
+  background: var(--yellow);
   color: var(--navy);
-  margin-bottom: 0.4rem;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1;
+  box-shadow: 0 0 0 4px var(--navy);
+}
+.step-body {
+  flex: 1;
+  padding: 2.4rem 1.5rem 1.75rem;
+}
+.step-body h3 {
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+.step-body p {
+  font-size: 0.98rem;
+  color: var(--text-soft);
+}
+@media (min-width: 900px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: none;
+  }
 }
 
 /* Trama de puntos: una sola capa, se desvanece desde las esquinas */
+.points-bg {
+  position: relative;
+  overflow: hidden;
+}
+.points-bg > .container {
+  position: relative;
+  z-index: 1;
+}
 .points-bg::before {
   content: "";
   position: absolute;
@@ -545,15 +604,6 @@ h3 {
     radial-gradient(ellipse 35% 70% at 0% 100%, #000, transparent);
 }
 
-/* Número */
-.step p {
-  font-style: italic;
-  font-weight: 900;
-  font-size: 3rem;
-  line-height: 1;
-  color: var(--line);
-  pointer-events: none;
-}
 /* ───────── Preguntas ───────── */
 .faq {
   display: grid;
@@ -592,28 +642,197 @@ h3 {
 }
 
 /* ───────── Contacto ───────── */
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    55% 60% at 50% 45%,
+    rgba(255, 210, 26, 0.14),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+.contact > .container {
+  position: relative;
+  z-index: 1;
+}
 .contact-box {
-  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 2.25rem;
+  align-items: center;
+  background: linear-gradient(145deg, #161617, var(--navy) 60%);
   color: var(--white);
+  border: 1px solid var(--border);
   border-radius: calc(var(--radius) + 8px);
-  padding: 3rem 1.5rem;
-  text-align: center;
+  padding: 2.5rem 1.5rem;
 }
-.contact-box .lead {
-  margin-left: auto;
-  margin-right: auto;
+.contact-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--yellow), transparent);
 }
-.contact-place {
+.contact-places {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-top: 1.5rem;
-  font-size: 0.9rem;
+}
+.contact-places li {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-soft);
+}
+.contact-actions {
+  display: grid;
+  gap: 0.9rem;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 18px;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease;
+}
+.contact-link:hover {
+  transform: translateY(-2px);
+}
+.contact-ico {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 12px;
+}
+.contact-ico svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.contact-link small {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   opacity: 0.7;
+}
+.contact-link strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+.contact-link-wa {
+  background: var(--yellow);
+  color: var(--navy);
+}
+.contact-link-wa:hover {
+  background: var(--yellow-soft);
+}
+.contact-link-wa .contact-ico {
+  background: rgba(0, 0, 0, 0.12);
+}
+.contact-link-mail {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--white);
+}
+.contact-link-mail:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.contact-link-mail .contact-ico {
+  background: rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 760px) {
+  .contact-box {
+    grid-template-columns: 1.15fr 1fr;
+    gap: 3rem;
+    padding: 3.5rem 3rem;
+  }
 }
 
 .site-footer {
-  padding: 2rem 0 5.5rem;
-  text-align: center;
+  background: var(--navy-deep);
+  border-top: 1px solid var(--border);
+  padding: 3rem 0 6rem;
   font-size: 0.9rem;
   color: var(--muted);
+}
+.footer-grid {
+  display: grid;
+  gap: 2rem;
+}
+.footer-name {
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+.footer-fiscal {
+  display: grid;
+  gap: 0.9rem;
+}
+.footer-fiscal dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+.footer-fiscal dd {
+  margin-top: 0.15rem;
+  line-height: 1.45;
+  color: var(--line);
+}
+.footer-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.footer-arca {
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+}
+.footer-arca img {
+  height: 40px;
+  width: auto;
+}
+.footer-top {
+  font-weight: 600;
+  color: var(--line);
+  text-decoration: none;
+}
+.footer-top:hover {
+  color: var(--yellow);
+}
+@media (min-width: 760px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1.6fr auto;
+    align-items: start;
+  }
+  .footer-side {
+    align-items: flex-end;
+  }
 }
 
 /* ───────── WhatsApp flotante ───────── */
@@ -687,9 +906,6 @@ h3 {
   }
   .extras {
     grid-template-columns: 1fr 1fr;
-  }
-  .steps {
-    grid-template-columns: repeat(3, 1fr);
   }
   .project {
     grid-template-columns: 1.15fr 1fr;
@@ -770,15 +986,6 @@ h3 {
 .cur.pre {
   margin: 0 0.35em 0 0;
 }
-.card-featured .price-note {
-  color: var(--yellow);
-}
-.price-note {
-  margin-top: 1.25rem;
-  font-size: 0.9rem;
-  color: var(--muted);
-  text-align: center;
-}
 @media (min-width: 760px) {
   .cards,
   .extras {
@@ -835,34 +1042,16 @@ h3 {
 }
 
 /* Datos fiscales en el pie */
-.site-footer .fiscal {
-  margin-top: 0.4rem;
-  font-size: 0.8rem;
-  color: var(--line);
-  opacity: 0.85;
-  max-width: 36rem;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.45;
-}
 
 /* Logos de pago y fiscales */
 .pay-logo {
   display: block;
-  height: 22px;
+  height: 38px;
   width: auto;
-  margin-top: 0.45rem;
+  padding: 8px 14px;
+  margin-top: 0.6rem;
+  background: #fff;
+  border-radius: 10px;
+  object-fit: contain;
 }
 
-.footer-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.footer-logos img {
-  height: 40px;
-  width: auto;
-  opacity: 0.85;
-}

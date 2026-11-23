@@ -193,8 +193,12 @@
       </section>
 
       <!-- ───────── Cómo trabajamos ───────── -->
-      <section class="section" id="como" aria-labelledby="como-title">
-        <div class="container points-bg">
+      <section
+        class="section points-bg"
+        id="como"
+        aria-labelledby="como-title"
+      >
+        <div class="container">
           <div class="section-head reveal">
             <p class="eyebrow">Cómo trabajamos</p>
             <h2 id="como-title">Un proceso transparente y cercano</h2>
@@ -206,34 +210,61 @@
 
           <ol class="steps">
             <li class="step reveal">
-              <img src="img/reunion-trabajo.jpg" />
-              <p>1</p>
-              <h3>Reunión inicial</h3>
-              <p>
-                Nos reunimos por Meet o Zoom, escuchamos tu idea y te explicamos
-                paso a paso cómo desarrollamos. Así conoces al equipo y ves cómo
-                trabajamos desde el primer momento.
-              </p>
+              <div class="step-media">
+                <img
+                  src="img/reunion-trabajo.jpg"
+                  alt="Reunión inicial por videollamada"
+                  loading="lazy"
+                />
+                <span class="step-num">1</span>
+              </div>
+              <div class="step-body">
+                <h3>Reunión inicial</h3>
+                <p>
+                  Nos reunimos por Meet o Zoom, escuchamos tu idea y te
+                  explicamos paso a paso cómo desarrollamos. Así conoces al
+                  equipo y ves cómo trabajamos desde el primer momento.
+                </p>
+              </div>
             </li>
             <li class="step reveal" style="--d: 0.06s">
-              <p>2</p>
-              <h3>Propuesta visual</h3>
-              <p>
-                Preparamos una primera propuesta de tu página con tu logo,
-                colores y estructura. Revisamos juntos los detalles y hacemos
-                los ajustes iniciales para que el diseño se adapte a lo que
-                buscas.
-              </p>
+              <div class="step-media">
+                <!-- Para agregar la imagen: borrá el div placeholder y poné
+                     <img src="img/propuesta-visual.jpg" alt="Propuesta visual de la página" loading="lazy" /> -->
+                <div class="step-media-placeholder" aria-hidden="true">
+                  Imagen próximamente
+                </div>
+                <span class="step-num">2</span>
+              </div>
+              <div class="step-body">
+                <h3>Propuesta visual</h3>
+                <p>
+                  Preparamos una primera propuesta de tu página con tu logo,
+                  colores y estructura. Revisamos juntos los detalles y hacemos
+                  los ajustes iniciales para que el diseño se adapte a lo que
+                  buscas.
+                </p>
+              </div>
             </li>
             <li class="step reveal" style="--d: 0.12s">
-              <p>3</p>
-              <h3>Alcance, anticipo y desarrollo</h3>
-              <p>
-                Acordamos el alcance del proyecto y el anticipo (30 % por
-                PayPal) para reservar el tiempo de trabajo. Después
-                desarrollamos la web completa, con SEO técnico, y la publicamos.
-                Si contratas mantenimiento, seguimos acompañándote.
-              </p>
+              <div class="step-media">
+                <!-- Para agregar la imagen: borrá el div placeholder y poné
+                     <img src="img/desarrollo.jpg" alt="Desarrollo y publicación de la web" loading="lazy" /> -->
+                <div class="step-media-placeholder" aria-hidden="true">
+                  Imagen próximamente
+                </div>
+                <span class="step-num">3</span>
+              </div>
+              <div class="step-body">
+                <h3>Alcance, anticipo y desarrollo</h3>
+                <p>
+                  Acordamos el alcance del proyecto y el anticipo (30 % por
+                  PayPal) para reservar el tiempo de trabajo. Después
+                  desarrollamos la web completa, con SEO técnico, y la
+                  publicamos. Si contratas mantenimiento, seguimos
+                  acompañándote.
+                </p>
+              </div>
             </li>
           </ol>
         </div>
@@ -471,46 +502,62 @@
       >
         <div class="container">
           <div class="contact-box reveal">
-            <h2 id="contacto-title">Cuéntanos sobre tu negocio</h2>
-            <p class="lead">
-              Escríbenos y nuestro equipo te dice qué necesitas, cuánto cuesta y
-              cuándo lo tienes. Diseño, desarrollo, optimización SEO y, si
-              quieres, mantenimiento continuo.
-            </p>
-            <div class="cta-row cta-center">
-              <a
-                class="btn btn-yellow"
-                href="https://wa.me/5491144400101?text=Hola%20Lautaro%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20consultar%20por%20una%20p%C3%A1gina%20web%20para%20mi%20negocio"
-                >WhatsApp +54 9 11 4440 0101</a
-              >
-              <a class="btn btn-ghost" href="mailto:lautaronuriel@gmail.com"
-                >lautaronuriel@gmail.com</a
-              >
+            <div class="contact-copy">
+              <h2 id="contacto-title">Cuéntanos sobre tu negocio</h2>
+              <p class="lead">
+                Escríbenos y nuestro equipo te dice qué necesitas, cuánto cuesta
+                y cuándo lo tienes. Diseño, desarrollo, optimización SEO y, si
+                quieres, mantenimiento continuo.
+              </p>
+              <ul class="contact-places">
+                <li>Buenos Aires, Argentina</li>
+                <li>Servicio 100 % online para toda España</li>
+                <li>Atención en horario de España</li>
+              </ul>
             </div>
-            <p class="contact-place">
-              Buenos Aires, Argentina · Servicio 100 % online para toda España ·
-              Atención en horario de España
-            </p>
+            <div class="contact-actions">
+              <a class="contact-link contact-link-wa" href="https://wa.me/5491144400101?text=Hola%20Lautaro%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20consultar%20por%20una%20p%C3%A1gina%20web%20para%20mi%20negocio">
+                <span class="contact-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
+                </span>
+                <span><small>WhatsApp</small><strong>+54 9 11 4440 0101</strong></span>
+              </a>
+              <a class="contact-link contact-link-mail" href="mailto:lautaronuriel@gmail.com">
+                <span class="contact-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                </span>
+                <span><small>Email</small><strong>lautaronuriel@gmail.com</strong></span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <p>© 2026 Lautaro Nuriel Waltersdorf</p>
-        <p class="fiscal">
-          CUIT 20-42340816-3 · Domicilio fiscal: El Gaucho 5872, C.P. 1419,
-          Ciudad Autónoma de Buenos Aires, Argentina
-        </p>
-        <div class="footer-logos">
-          <img
-            src="img/arca.webp"
-            alt="ARCA"
-            width="48"
-            height="48"
-            title="ARCA"
-          />
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <p class="footer-name">Lautaro Nuriel Waltersdorf</p>
+          <p class="footer-copy">© 2026</p>
+        </div>
+        <dl class="footer-fiscal">
+          <div>
+            <dt>CUIT</dt>
+            <dd>20-42340816-3</dd>
+          </div>
+          <div>
+            <dt>Domicilio fiscal</dt>
+            <dd>
+              El Gaucho 5872, C.P. 1419, Ciudad Autónoma de Buenos Aires,
+              Argentina
+            </dd>
+          </div>
+        </dl>
+        <div class="footer-side">
+          <span class="footer-arca">
+            <img src="img/arca.webp" alt="ARCA" width="48" height="48" title="ARCA" />
+          </span>
+          <a class="footer-top" href="#top">Volver arriba ↑</a>
         </div>
       </div>
     </footer>
