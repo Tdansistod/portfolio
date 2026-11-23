@@ -226,8 +226,7 @@ h2 {
 .price,
 .price-pill,
 .hero-card-label,
-.placeholder-label,
-.step-num {
+.placeholder-label {
   font-style: italic;
   font-weight: 900;
 }
