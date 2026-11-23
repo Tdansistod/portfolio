@@ -504,7 +504,6 @@ h3 {
 }
 .step {
   background: var(--white);
-  border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 1.5rem;
 }
