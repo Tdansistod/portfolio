@@ -177,10 +177,18 @@ ol {
   padding: 1.25rem 0;
 }
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 800;
   font-size: 1.05rem;
   text-decoration: none;
   letter-spacing: -0.01em;
+}
+.brand-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: none;
 }
 .topbar-links {
   display: none;
@@ -1057,4 +1065,16 @@ h3 {
   background: #fff;
   border-radius: 10px;
   object-fit: contain;
+}
+
+/* ───────── Móvil: textos más grandes ─────────
+   Casi todo está en rem, así que subir la raíz escala textos, botones y espacios. */
+@media (max-width: 759px) {
+  html {
+    font-size: 112.5%; /* 18px en vez de 16px */
+  }
+  .brand-logo {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
 }
