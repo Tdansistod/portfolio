@@ -421,3 +421,78 @@ h3 { font-size: 1.5rem; }
 .price-note { margin-top: 1.25rem; font-size: 0.9rem; color: var(--muted); text-align: center; }
 @media (min-width: 760px) { .cards, .extras { grid-template-columns: 1fr; } }
 @media (min-width: 980px) { .cards, .extras { grid-template-columns: repeat(3, 1fr); } }
+
+/* ───────── Imágenes nuevas: Páginas Express + Black Friday + reunión ───────── */
+.eyebrow-img {
+  display: block;
+  width: min(220px, 55vw);
+  height: auto;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 4px 18px rgba(255, 210, 26, 0.35));
+}
+
+.hero-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.bf-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 110px;
+  height: auto;
+  transform: rotate(12deg);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Confeti sutil de fondo solo en la tarjeta del hero (Black Friday) */
+.hero-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("img/confetti.webp") center / cover no-repeat;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+.hero-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Imagen de la reunión en Cómo trabajamos */
+.como-visual {
+  margin: 0 0 2rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid rgba(255, 210, 26, 0.35);
+  background: #141414;
+}
+.como-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.como-visual figcaption {
+  padding: 0.85rem 1.25rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-top: 1px solid rgba(255, 210, 26, 0.2);
+}
+
+/* Ajuste del note en sección oscura */
+#como .muestras-note {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 760px) {
+  .eyebrow-img { width: 260px; }
+  .bf-badge { width: 130px; top: -8px; right: -8px; }
+}
