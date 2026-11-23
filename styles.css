@@ -59,7 +59,7 @@ html {
 
 body {
   background: var(--bg);
-  color: var(--ink);
+  color: var(--line);
   font-family: var(--font);
   font-size: 16px;
   line-height: 1.6;
