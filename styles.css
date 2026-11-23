@@ -506,6 +506,7 @@ h3 {
   background: var(--white);
   border-radius: var(--radius);
   padding: 1.5rem;
+  padding-top: 6rem;
 }
 .step-num {
   display: inline-grid;
