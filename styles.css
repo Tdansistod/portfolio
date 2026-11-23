@@ -525,7 +525,7 @@ h3 {
 }
 
 /* Trama de puntos: una sola capa, se desvanece desde las esquinas */
-.steps::before {
+.points-bg::before {
   content: "";
   position: absolute;
   inset: 0;
