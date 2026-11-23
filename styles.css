@@ -881,6 +881,7 @@ h3 {
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  margin: auto;
 }
 .como-visual figcaption {
   padding: 0.85rem 1.25rem;
