@@ -526,10 +526,6 @@ h3 {
   color: var(--navy);
   margin-bottom: 0.4rem;
 }
-.step p {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
 
 /* ───────── Preguntas ───────── */
 .faq {
