@@ -503,6 +503,7 @@ h3 {
   align-items: center;
   gap: 1.25rem;
   max-width: 50rem;
+  margin: auto;
 }
 .step {
   background: var(--white);
