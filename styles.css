@@ -506,7 +506,7 @@ h3 {
   background: var(--white);
   border-radius: var(--radius);
   padding: 1.5rem;
-  padding-top: 6rem;
+  padding-top: 5.5rem;
 }
 .step-num {
   display: inline-grid;
@@ -738,7 +738,7 @@ h3 {
   font-weight: 900;
   font-size: 7.5rem;
   line-height: 1;
-  color: rgba(255, 210, 26, 0.12);
+  color: rgba(255, 210, 26, 1);
   pointer-events: none;
 }
 
