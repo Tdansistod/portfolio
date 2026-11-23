@@ -544,13 +544,11 @@ h3 {
     radial-gradient(ellipse 35% 70% at 0% 100%, #000, transparent);
 }
 
-/* Número gigante de fondo */
-.step::before {
-  content: attr(data-n);
-  z-index: 0;
+/* Número */
+.step p {
   font-style: italic;
   font-weight: 900;
-  font-size: 5rem;
+  font-size: 3rem;
   line-height: 1;
   color: var(--line);
   pointer-events: none;
