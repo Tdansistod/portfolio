@@ -135,7 +135,8 @@ ol {
   padding-bottom: 7rem;
   overflow: hidden;
 }
-.hero::before {
+.hero::before,
+.contact {
   content: "";
   position: absolute;
   inset: 0;
