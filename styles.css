@@ -496,3 +496,36 @@ h3 { font-size: 1.5rem; }
   .eyebrow-img { width: 260px; }
   .bf-badge { width: 130px; top: -8px; right: -8px; }
 }
+
+/* Datos fiscales en el pie */
+.site-footer .fiscal {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  opacity: 0.85;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.45;
+}
+
+/* Logos de pago y fiscales */
+.pay-logo {
+  display: block;
+  height: 22px;
+  width: auto;
+  margin-top: 0.45rem;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer-logos img {
+  height: 40px;
+  width: auto;
+  opacity: 0.85;
+}
