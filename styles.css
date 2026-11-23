@@ -477,18 +477,18 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--line);
   margin-bottom: 0.5rem;
 }
 .project-body h3 {
-  color: var(--navy);
+  color: var(--white);
   font-size: clamp(1.6rem, 4vw, 2rem);
 }
 .project-live {
   display: inline-block;
   margin: 0.6rem 0 0.9rem;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--white);
   text-decoration-color: var(--yellow);
   text-decoration-thickness: 3px;
   text-underline-offset: 4px;
@@ -499,7 +499,7 @@ h3 {
   text-decoration: none;
 }
 .project-text {
-  color: var(--muted);
+  color: var(--line);
   margin-bottom: 1.1rem;
 }
 
