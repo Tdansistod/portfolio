@@ -784,6 +784,11 @@ h3 {
   letter-spacing: -0.01em;
   color: var(--white);
 }
+.footer-legal {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
 .footer-fiscal {
   display: grid;
   gap: 0.9rem;
@@ -807,6 +812,7 @@ h3 {
   gap: 1rem;
 }
 .footer-arca {
+  flex: none;
   display: grid;
   place-items: center;
   padding: 0.5rem;
@@ -827,7 +833,7 @@ h3 {
 }
 @media (min-width: 760px) {
   .footer-grid {
-    grid-template-columns: 1fr 1.6fr auto;
+    grid-template-columns: 1fr 1.8fr auto;
     align-items: start;
   }
   .footer-side {
