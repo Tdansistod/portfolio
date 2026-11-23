@@ -321,9 +321,6 @@ h3 {
 .section {
   padding: 5rem 0;
 }
-.section-alt {
-  background: var(--white);
-}
 .section-head {
   margin-bottom: 2.5rem;
 }
