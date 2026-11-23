@@ -837,7 +837,6 @@ h3 {
   width: 20rem;
   height: auto;
   transform: rotate(12deg);
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
   z-index: 2;
   pointer-events: none;
 }
@@ -886,8 +885,6 @@ h3 {
 @media (min-width: 760px) {
   .bf-badge {
     width: 130px;
-    top: -8px;
-    right: -8px;
   }
 }
 
