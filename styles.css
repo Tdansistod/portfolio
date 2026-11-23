@@ -43,18 +43,17 @@ html {
   height: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--navy);
+  background: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--yellow);
-  border: 3px solid var(--navy);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--yellow-soft);
 }
 ::-webkit-scrollbar-corner {
-  background: var(--navy);
+  background: var(--bg);
 }
 
 body {
