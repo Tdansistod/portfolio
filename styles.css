@@ -210,10 +210,6 @@ ol {
   color: var(--yellow);
   margin-bottom: 0.9rem;
 }
-.eyebrow-dark {
-  color: var(--navy);
-  opacity: 0.7;
-}
 
 h1,
 h2,
