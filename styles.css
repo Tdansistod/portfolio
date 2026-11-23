@@ -618,6 +618,9 @@ h3 {
 
 /* ───────── WhatsApp flotante ───────── */
 .wa-float {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 4rem;
   height: 4rem;
   position: fixed;
