@@ -758,7 +758,7 @@ h3 {
 /* ───────── Muestras de diseño ───────── */
 .muestras-note {
   margin-top: 0.8rem;
-  color: var(--line);
+  color: var(--white);
 }
 .muestras {
   display: grid;
@@ -771,7 +771,7 @@ h3 {
   margin-top: 1rem;
 }
 .muestra p {
-  color: var(--muted);
+  color: var(--white);
   font-size: 0.9rem;
 }
 @media (min-width: 760px) {
