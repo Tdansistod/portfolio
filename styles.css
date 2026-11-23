@@ -154,6 +154,14 @@ ol {
     );
   pointer-events: none;
 }
+.bf-badge {
+  position: relative;
+  width: 10rem;
+  height: auto;
+  transform: rotate(12deg);
+  z-index: 2;
+  pointer-events: none;
+}
 .hero > .container {
   position: relative;
   z-index: 1;
@@ -1017,15 +1025,6 @@ h3 {
   overflow: hidden;
 }
 
-.bf-badge {
-  position: relative;
-  width: 10rem;
-  height: auto;
-  transform: rotate(12deg);
-  z-index: 2;
-  pointer-events: none;
-}
-
 /* Confeti sutil de fondo solo en la tarjeta del hero (Black Friday) */
 .hero-card::before {
   content: "";
@@ -1045,11 +1044,11 @@ h3 {
 @media (max-width: 760px) {
   .bf-badge {
     position: absolute;
-    top: 0.5rem;
+    top: 3.5rem;
     right: 0.5rem;
   }
   .hero-grid {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 }
 
