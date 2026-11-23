@@ -734,7 +734,7 @@ h3 {
   font-weight: 900;
   font-size: 7.5rem;
   line-height: 1;
-  color: rgba(255, 210, 26, 1);
+  color: var(--line);
   pointer-events: none;
 }
 
