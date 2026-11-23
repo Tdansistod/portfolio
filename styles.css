@@ -413,3 +413,11 @@ h3 { font-size: 1.5rem; }
 .project-media:hover .scroll-img { animation-play-state: paused; }
 @keyframes scroll-img { 0%, 10% { object-position: 50% 0%; } 90%, 100% { object-position: 50% 100%; } }
 @media (prefers-reduced-motion: reduce) { .scroll-img { animation: none; } }
+
+/* ───────── Planes (3 columnas), precio tachado y notas ───────── */
+.old { text-decoration: line-through; text-decoration-color: #d61f1f; text-decoration-thickness: 3px; font-size: 0.5em; font-weight: 800; opacity: 0.75; margin-right: 0.25em; }
+.cur.pre { margin: 0 0.35em 0 0; }
+.card-featured .price-note { color: var(--yellow); }
+.vat-note { margin-top: 1.25rem; font-size: 0.9rem; color: var(--muted); text-align: center; }
+@media (min-width: 760px) { .cards, .extras { grid-template-columns: 1fr; } }
+@media (min-width: 980px) { .cards, .extras { grid-template-columns: repeat(3, 1fr); } }
