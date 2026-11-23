@@ -422,15 +422,7 @@ h3 { font-size: 1.5rem; }
 @media (min-width: 760px) { .cards, .extras { grid-template-columns: 1fr; } }
 @media (min-width: 980px) { .cards, .extras { grid-template-columns: repeat(3, 1fr); } }
 
-/* ───────── Imágenes nuevas: Páginas Express + Black Friday + reunión ───────── */
-.eyebrow-img {
-  display: block;
-  width: min(220px, 55vw);
-  height: auto;
-  margin-bottom: 0.75rem;
-  filter: drop-shadow(0 4px 18px rgba(255, 210, 26, 0.35));
-}
-
+/* ───────── Imágenes: Black Friday + reunión ───────── */
 .hero-card {
   position: relative;
   overflow: hidden;
@@ -493,7 +485,6 @@ h3 { font-size: 1.5rem; }
 }
 
 @media (min-width: 760px) {
-  .eyebrow-img { width: 260px; }
   .bf-badge { width: 130px; top: -8px; right: -8px; }
 }
 
