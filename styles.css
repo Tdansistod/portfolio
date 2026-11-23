@@ -880,7 +880,7 @@ h3 {
 
 /* Ajuste del note en sección oscura */
 
-@media (min-width: 760px) {
+@media (max-width: 760px) {
   .bf-badge {
     position: absolute;
     top: 0.5rem;
