@@ -511,18 +511,6 @@ h3 {
   border-radius: var(--radius);
   padding: 1rem;
 }
-.step-num {
-  display: inline-grid;
-  place-items: center;
-  width: 2.6rem;
-  height: 2.6rem;
-  border-radius: 50%;
-  background: var(--navy);
-  color: var(--yellow);
-  font-weight: 800;
-  font-size: 1.2rem;
-  margin-bottom: 0.9rem;
-}
 .step h3 {
   font-size: 1.2rem;
   color: var(--navy);
@@ -534,6 +522,38 @@ h3 {
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+/* Trama de puntos: una sola capa, se desvanece desde las esquinas */
+.steps::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    var(--yellow) 1.8px,
+    transparent 2.4px
+  );
+  background-size: 14px 14px;
+  opacity: 0.5;
+  -webkit-mask-image:
+    radial-gradient(ellipse 50% 90% at 100% 0%, #000, transparent),
+    radial-gradient(ellipse 35% 70% at 0% 100%, #000, transparent);
+  mask-image:
+    radial-gradient(ellipse 50% 90% at 100% 0%, #000, transparent),
+    radial-gradient(ellipse 35% 70% at 0% 100%, #000, transparent);
+}
+
+/* Número gigante de fondo */
+.step::before {
+  content: attr(data-n);
+  z-index: 0;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--line);
+  pointer-events: none;
 }
 /* ───────── Preguntas ───────── */
 .faq {
@@ -674,60 +694,6 @@ h3 {
   .contact-box {
     padding: 4rem 2rem;
   }
-}
-
-/* Trama de puntos: una sola capa, se desvanece desde las esquinas */
-#como::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background-image: radial-gradient(
-    circle,
-    var(--yellow) 1.8px,
-    transparent 2.4px
-  );
-  background-size: 14px 14px;
-  opacity: 0.5;
-  -webkit-mask-image:
-    radial-gradient(ellipse 50% 90% at 100% 0%, #000, transparent),
-    radial-gradient(ellipse 35% 70% at 0% 100%, #000, transparent);
-  mask-image:
-    radial-gradient(ellipse 50% 90% at 100% 0%, #000, transparent),
-    radial-gradient(ellipse 35% 70% at 0% 100%, #000, transparent);
-}
-
-#como .step {
-  position: relative;
-  background: #141414;
-  color: var(--white);
-}
-#como .step > * {
-  position: relative;
-  z-index: 1;
-}
-#como .step h3 {
-  color: var(--yellow);
-}
-
-#como .step-num {
-  background: var(--yellow);
-  color: #000;
-}
-
-/* Número gigante de fondo */
-#como .step::before {
-  content: attr(data-n);
-  z-index: 0;
-  font-style: italic;
-  font-weight: 900;
-  font-size: 5rem;
-  line-height: 1;
-  color: var(--line);
-  pointer-events: none;
-  position: absolute;
-  top: -3rem;
-  left: -2rem;
 }
 
 /* ───────── Muestras de diseño ───────── */
