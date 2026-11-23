@@ -815,11 +815,11 @@ h3 {
   flex: none;
   display: grid;
   place-items: center;
-  border-radius: 12px;
 }
 .footer-arca img {
   height: 40px;
   width: auto;
+  border-radius: 12px;
 }
 .footer-top {
   font-weight: 600;
