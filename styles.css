@@ -832,7 +832,7 @@ h3 {
 
 .bf-badge {
   position: relative;
-  width: 20rem;
+  width: 10rem;
   height: auto;
   transform: rotate(12deg);
   z-index: 2;
