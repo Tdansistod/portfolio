@@ -628,9 +628,12 @@ h3 {
   color: var(--navy);
   font-weight: 800;
   text-decoration: none;
-  padding: 0.8rem 1.3rem;
   border-radius: 999px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+.wa-float img {
+  width: 3rem;
+  height: 3rem;
 }
 
 /* ───────── Aparición al hacer scroll ───────── */
