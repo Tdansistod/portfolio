@@ -718,7 +718,7 @@ h3 {
   z-index: 1;
 }
 #como .step h3 {
-  color: var(--white);
+  color: var(--yellow);
 }
 
 #como .step-num {
